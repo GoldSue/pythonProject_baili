@@ -33,3 +33,4 @@ class LoginPage(BasePage):
     def assert_wrong_username(self):
         return self.get_value(LoginPage.assert_wrong_username_loc,20)
 
+
