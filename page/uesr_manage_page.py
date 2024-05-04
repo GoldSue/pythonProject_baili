@@ -36,6 +36,7 @@ class UserManagePage(BasePage):
     url = "https://console-paas.digiwincloud.com.cn/mang-user"
 
     #页面操作
+    #新增用户
     def add_user(self, username="hahk456g87", password="5kgA65ddpJ"):
         if self.get_url() != UserManagePage.url:
             self.click(UserManagePage.user_manage_loc)
@@ -50,9 +51,11 @@ class UserManagePage(BasePage):
         time.sleep(2)
         self.click(UserManagePage.close_user_loc)
 
+    #新增用户断言
     def assert_add(self):
         return self.get_value(UserManagePage.add_done)
 
+    #修改用户信息
     def modify_save(self,username="jihi43h",phone=1387766422):
 
         if self.get_url() != UserManagePage.url:
@@ -66,18 +69,22 @@ class UserManagePage(BasePage):
         self.send_keys(UserManagePage.modify_phone_loc,phone)
         self.click(UserManagePage.modify_save_loc)
 
+    #断言修改成功
     def asert_modify(self):
         return self.get_value(UserManagePage.assert_modify_loc)
 
+    #停用用户
     def user_stop(self):
         if self.get_url() != UserManagePage.url:
             self.click(UserManagePage.user_manage_loc)
         self.click(UserManagePage.stop_use_loc,20)
         self.click(UserManagePage.stop_confirm_loc,20)
 
+    #断言停用成功
     def assert_stop(self):
         return self.get_value(UserManagePage.assert_stop_loc)
 
+    #删除用户
     def del_user(self):
         time.sleep(5)
         if self.get_url() != UserManagePage.url:
@@ -87,5 +94,6 @@ class UserManagePage(BasePage):
         time.sleep(3)
         self.click(UserManagePage.delet_confirm_loc,20)
 
+    #断言删除成功
     def assert_del(self):
         return self.get_value(UserManagePage.assert_delet_loc)
