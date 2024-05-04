@@ -10,7 +10,7 @@ class TestUserManage(BaseUtil):
     def test_001_add_user(self):
         um = UserManagePage(self.driver)
         um.add_user()
-        self.assertIn("新增完成",um.assert_complet())
+        self.assertIn("新增完成",um.assert_add())
 
     def test_002_modify_user(self):
         um = UserManagePage(self.driver)

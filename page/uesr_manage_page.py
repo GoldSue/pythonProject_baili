@@ -50,7 +50,7 @@ class UserManagePage(BasePage):
         time.sleep(2)
         self.click(UserManagePage.close_user_loc)
 
-    def assert_complet(self):
+    def assert_add(self):
         return self.get_value(UserManagePage.add_done)
 
     def modify_save(self,username="jihi43h",phone=1387766422):
