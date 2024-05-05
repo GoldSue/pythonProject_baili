@@ -46,6 +46,9 @@ class TestUserManage(BaseUtil):
         um.modify_group()
         # self.assertEqual(um.assert_modify_group("用户群组已修改",um.assert_modify_group_loc),)
 
-
+    def test_009_delete_group(self):
+        um = UserManagePage(self.driver)
+        um.delete_user_group()
+        # self.assertEqual(um.assert_delete_user_loc,"用户群组已删除")
 
 

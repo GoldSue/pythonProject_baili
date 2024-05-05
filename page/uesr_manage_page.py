@@ -64,6 +64,11 @@ class UserManagePage(BasePage):
     modify_dep_loc = (By.XPATH,'(//div[@class="ant-select-item-option-content"])[2]')
     modify_group_save_loc = (By.CSS_SELECTOR,'[class="btn ant-btn ant-btn-primary"]')
     assert_modify_group_loc = (By.XPATH,'//font[text()="用户群组已修改"]')
+    #删除用户群组
+    delete_user_group_loc = (By.XPATH,'(//a[@angularticslabel="刪除用戶群組"])[last()]')
+    delete_confirm_loc = (By.XPATH,'//span[text()=" 确定 "]')
+    assert_delete_user_loc = (By.XPATH,'//span[text()="用户群组已删除"]')
+
 
 
 
@@ -194,6 +199,23 @@ class UserManagePage(BasePage):
 
     def assert_modify_group(self):
         return self.get_value(UserManagePage.assert_modify_group_loc)
+
+    #删除用户群组
+    def delete_user_group(self):
+        if UserManagePage.group_url not in  self.get_url():
+            self.click(UserManagePage.user_manage_loc)
+            # self.click(UserManagePage.close_add_window_loc)
+            time.sleep(2)
+            #群组
+            self.click(UserManagePage.user_group_loc)
+            time.sleep(2)
+        self.click(UserManagePage.delete_user_group_loc)
+        time.sleep(3)
+        self.click(UserManagePage.delete_confirm_loc)
+
+    def assert_del_user(self):
+        return self.get_value(UserManagePage.assert_delete_user_loc)
+
 
 
 
