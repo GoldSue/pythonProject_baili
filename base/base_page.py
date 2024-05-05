@@ -29,6 +29,7 @@ class BasePage:
             element = WebDriverWait(self.driver,timeout).until(
                 EC.element_to_be_clickable(loc)
             )
+
             return element
         except TimeoutException:
             print(f"元素定位超时了，是这个{loc}")
