@@ -36,4 +36,16 @@ class TestUserManage(BaseUtil):
         um = UserManagePage(self.driver)
         um.invite_users()
 
+    def test_007_add_user_group(self):
+        um = UserManagePage(self.driver)
+        um.add_user_group()
+        # self.assertEqual(um.assert_group_save(),"用户群组已新增")
+
+    def test_008_modify_group(self):
+        um = UserManagePage(self.driver)
+        um.modify_group()
+        # self.assertEqual(um.assert_modify_group("用户群组已修改",um.assert_modify_group_loc),)
+
+
+
 

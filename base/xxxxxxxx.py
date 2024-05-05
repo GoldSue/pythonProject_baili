@@ -10,6 +10,7 @@
 import os
 import random
 
+import selenium
 from selenium import webdriver
 import chromedriver_autoinstaller
 from selenium.common import TimeoutException
@@ -17,7 +18,7 @@ from selenium.webdriver import ActionChains, Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-chromedriver_autoinstaller.install()
+# chromedriver_autoinstaller.install()
 
 import configparser
 import os
@@ -28,13 +29,8 @@ import platform
     # os.path.abspath(__file__)获取当前文件的绝对路径，路径包含文件名
     # os.path.dirname(os.path.abspath(__file__))获取当前文件的绝对路径，不包含文件名
     # 然后拼接上db.ini文件名，即可获得db.ini的绝对路径
-current_file_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-dir = os.path.join(current_file_dir,"data")
-
-filePath = os.path.join(dir,"account_invite.xlsx")
-
-print(filePath)
+driver = webdriver.Chrome()
+driver.get("http://www.baidu.com")
 
 
 

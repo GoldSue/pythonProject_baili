@@ -5,12 +5,13 @@ import time
 import pyautogui
 from selenium import webdriver
 import chromedriver_autoinstaller
+# chromedriver_autoinstaller.install()
 from selenium.common import TimeoutException
 from selenium.webdriver import ActionChains, Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-chromedriver_autoinstaller.install()
+
 
 
 class BasePage:

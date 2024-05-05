@@ -47,7 +47,23 @@ class UserManagePage(BasePage):
     upload_file_loc = (By.CSS_SELECTOR,'[angularticscategory="用戶管理-上傳批量檔案"]')
     # file_path_loc = "D:\pythonProject_baili\data\account_invite.xlsx"
     button_send_file_loc = (By.CSS_SELECTOR,'[angularticscategory="用戶管理-送出批量邀請訊息"]')
-
+    #用户群组
+    #新增用户群组
+    user_group_loc = (By.XPATH,'(//div[@class="ant-tabs-tab-btn"])[2]')
+    add_user_group_loc = (By.XPATH,'//span[text()="新增用户群组"]')
+    input_group_id_loc = (By.CSS_SELECTOR,'[placeholder="请输入用户群组ID"]')
+    input_group_name_loc = (By.CSS_SELECTOR,'[placeholder="请输入用户群组名称"]')
+    button_save_loc = (By.CSS_SELECTOR,'[class="btn ant-btn ant-btn-primary"]')
+    assert_save_loc = (By.XPATH,'//span[text()="用户群组已新增"]')
+    # 修改用户群组
+    close_add_window_loc = (By.XPATH,'[class="ant-modal-close-x"]')
+    group_url = "/mang-user/organization-mang/org-list"
+    modifu_group_loc = (By.XPATH,'(//a[text()=" 修改 "])[last()]')
+    modify_group_name_loc = (By.CSS_SELECTOR,'[placeholder="请输入用户群组名称"]')
+    modify_kenel_loc = (By.CSS_SELECTOR,'[class="ant-select-selection-item ng-star-inserted"]')
+    modify_dep_loc = (By.XPATH,'(//div[@class="ant-select-item-option-content"])[2]')
+    modify_group_save_loc = (By.CSS_SELECTOR,'[class="btn ant-btn ant-btn-primary"]')
+    assert_modify_group_loc = (By.XPATH,'//font[text()="用户群组已修改"]')
 
 
 
@@ -131,7 +147,7 @@ class UserManagePage(BasePage):
 
     #断言邀请成功
     def assert_invite(self):
-        self.get_value(UserManagePage.assert_invite_success_loc,15)
+        return self.get_value(UserManagePage.assert_invite_success_loc,15)
 
     #批量邀请用户
     def invite_users(self,filename="account_invite.xlsx"):
@@ -146,6 +162,43 @@ class UserManagePage(BasePage):
         self.upload_file(filename)
         time.sleep(3)
         self.click(UserManagePage.button_send_file_loc)
+
+    def add_user_group(self,group_name="棒棒鸡"):
+        if self.get_url() != UserManagePage.url:
+            self.click(UserManagePage.user_manage_loc)
+        time.sleep(3)
+        self.click(UserManagePage.user_group_loc)
+        self.click(UserManagePage.add_user_group_loc)
+        self.send_keys(UserManagePage.input_group_id_loc,self.random())
+        time.sleep(1)
+        self.send_keys(UserManagePage.input_group_name_loc,group_name)
+        time.sleep(1)
+        self.click(UserManagePage.button_save_loc)
+
+    def assert_group_save(self):
+        return self.get_value(UserManagePage.assert_save_loc)
+
+    def modify_group(self,group="132erw"):
+        if UserManagePage.group_url not in  self.get_url():
+            self.click(UserManagePage.user_manage_loc)
+            # self.click(UserManagePage.close_add_window_loc)
+            time.sleep(2)
+            #群组
+            self.click(UserManagePage.user_group_loc)
+            time.sleep(2)
+        self.click(UserManagePage.modifu_group_loc)
+        self.send_keys(UserManagePage.modify_group_name_loc,group)
+        self.click(UserManagePage.modify_kenel_loc)
+        self.click(UserManagePage.modify_dep_loc)
+        self.click(UserManagePage.modify_group_save_loc)
+
+    def assert_modify_group(self):
+        return self.get_value(UserManagePage.assert_modify_group_loc)
+
+
+
+
+
 
 
 
