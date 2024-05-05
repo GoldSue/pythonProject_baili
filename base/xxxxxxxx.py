@@ -7,8 +7,7 @@
 # lis = ['a','b','c','d','e','f','g','h','i','j']
 # A = random.choice(lis)
 # print("A" + A + ele)
-
-
+import os
 import random
 
 from selenium import webdriver
@@ -20,12 +19,34 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 chromedriver_autoinstaller.install()
 
+import configparser
+import os
+import platform
 
-driver = webdriver.Chrome()
-driver.maximize_window()
-driver.get("https://www.baidu.com")
-url = driver.current_url
-print(url)
+
+    # __file__获取当前这个文件的文件名
+    # os.path.abspath(__file__)获取当前文件的绝对路径，路径包含文件名
+    # os.path.dirname(os.path.abspath(__file__))获取当前文件的绝对路径，不包含文件名
+    # 然后拼接上db.ini文件名，即可获得db.ini的绝对路径
+current_file_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+dir = os.path.join(current_file_dir,"data")
+
+filePath = os.path.join(dir,"account_invite.xlsx")
+
+print(filePath)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

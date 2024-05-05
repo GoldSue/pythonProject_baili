@@ -1,5 +1,8 @@
+import os
 import random
+import time
 
+import pyautogui
 from selenium import webdriver
 import chromedriver_autoinstaller
 from selenium.common import TimeoutException

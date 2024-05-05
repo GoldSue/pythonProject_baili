@@ -26,3 +26,14 @@ class TestUserManage(BaseUtil):
         um = UserManagePage(self.driver)
         um.del_user()
         self.assertIn("用户已删除",um.assert_del())
+
+    def test_005_invite_user(self):
+        um = UserManagePage(self.driver)
+        um.invite_user()
+        # self.assertEqual("邀请发起成功",um.assert_invite())
+
+    def test_006_invite_users(self):
+        um = UserManagePage(self.driver)
+        um.invite_users()
+
+

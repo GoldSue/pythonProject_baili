@@ -34,6 +34,22 @@ class UserManagePage(BasePage):
     delet_confirm_loc = (By.XPATH, '//button[@class="ant-btn ng-tns-c34-68 ant-btn-primary ng-star-inserted"]')
     assert_delet_loc = (By.XPATH, '//span[contains(text(),"用户已删除")]')
     url = "https://console-paas.digiwincloud.com.cn/mang-user"
+    #邀请用户
+    invite_user_loc = (By.XPATH,'//span[text()="邀请用户"]')
+    invite_user_manage_loc = (By.XPATH,'//a[@angularticscategory="用戶管理-邀請"]')
+    input_invite_user_loc = (By.ID,'user')
+    user_chartra_loc = (By.CSS_SELECTOR,'(//dw-select-item[contains(@title,"用户")])[2]')
+    out_user_loc = (By.XPATH,'(//div[@class="ant-select-item-option-content"])[2]')
+    button_send_message_loc = (By.CSS_SELECTOR,'[angularticslabel="送出用戶邀請訊息"]')
+    assert_invite_success_loc = (By.CSS_SELECTOR,'[class="ant-message-custom-content ng-tns-c62-56 ant-message-success"]')
+    #批量邀请
+    invite_users_manage_loc = (By.CSS_SELECTOR,'[angularticscategory="用戶管理-批量邀請"]')
+    upload_file_loc = (By.CSS_SELECTOR,'[angularticscategory="用戶管理-上傳批量檔案"]')
+    # file_path_loc = "D:\pythonProject_baili\data\account_invite.xlsx"
+    button_send_file_loc = (By.CSS_SELECTOR,'[angularticscategory="用戶管理-送出批量邀請訊息"]')
+
+
+
 
     #页面操作
     #新增用户
@@ -97,3 +113,39 @@ class UserManagePage(BasePage):
     #断言删除成功
     def assert_del(self):
         return self.get_value(UserManagePage.assert_delet_loc)
+
+    #邀请用户
+    def invite_user(self,userid=123444344):
+        if self.get_url() != UserManagePage.url:
+            self.click(UserManagePage.user_manage_loc)
+        time.sleep(2)
+        self.click(UserManagePage.invite_user_loc)
+        time.sleep(1)
+        self.click(UserManagePage.invite_user_manage_loc)
+        self.send_keys(UserManagePage.input_invite_user_loc,userid)
+        time.sleep(2)
+        # self.click(UserManagePage.user_chartra_loc)
+        # time.sleep(2)
+        # self.click(UserManagePage.out_user_loc)
+        self.click(UserManagePage.button_send_message_loc)
+
+    #断言邀请成功
+    def assert_invite(self):
+        self.get_value(UserManagePage.assert_invite_success_loc,15)
+
+    #批量邀请用户
+    def invite_users(self,filename="account_invite.xlsx"):
+        if self.get_url() != UserManagePage.url:
+            self.click(UserManagePage.user_manage_loc)
+        time.sleep(10)
+        self.click(UserManagePage.invite_user_loc)
+        self.click(UserManagePage.invite_users_manage_loc)
+        time.sleep(3)
+        self.click(UserManagePage.upload_file_loc)
+        time.sleep(3)
+        self.upload_file(filename)
+        time.sleep(3)
+        self.click(UserManagePage.button_send_file_loc)
+
+
+
