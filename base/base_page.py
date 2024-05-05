@@ -72,6 +72,17 @@ class BasePage:
         A = random.choice(lis)
         ran = "A" + A + ele
         return ran
+    def get_file_path(self,filename):
+        current_file_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        dir = os.path.join(current_file_dir, "data")
+        filePath = os.path.join(dir, filename)
+        return filePath
+
+    def upload_file(self,filename):
+        pyautogui.write(self.get_file_path(filename))
+        time.sleep(1)
+        pyautogui.press('enter')
+
 
 
 
