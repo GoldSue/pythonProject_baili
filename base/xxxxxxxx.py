@@ -1,49 +1,30 @@
+import os
+
+# 示例获取绝对路径
+absolute_path = os.path.dirname("a.text.py")
+print(absolute_path)
+
+import os
+
+# 示例获取路径的目录部分
 
 
-
-# import random
+# 示例获取绝对路径
+# absolute_path = os.path.dirname(os.path.abspath('a.text.py'))
 #
-# ele = str(random.randrange(1000000,9999999))
-# lis = ['a','b','c','d','e','f','g','h','i','j']
-# A = random.choice(lis)
-# print("A" + A + ele)
-import os
-import random
+# print(absolute_path)
+absolute_path2 = os.path.abspath('account_invite.xlsx')
+file_path = os.path.join
+print(absolute_path2)
 
-import selenium
-from selenium import webdriver
-import chromedriver_autoinstaller
-from selenium.common import TimeoutException
-from selenium.webdriver import ActionChains, Keys
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-# chromedriver_autoinstaller.install()
+current_file_dir = os.path.abspath("account_invite.xlsx")
+dir = os.path.join(current_file_dir, "data")
+filePath = os.path.join(dir, "account_invite.xlsx")
+print(filePath)
 
-import configparser
-import os
-import platform
-
-
-    # __file__获取当前这个文件的文件名
-    # os.path.abspath(__file__)获取当前文件的绝对路径，路径包含文件名
-    # os.path.dirname(os.path.abspath(__file__))获取当前文件的绝对路径，不包含文件名
-    # 然后拼接上db.ini文件名，即可获得db.ini的绝对路径
-driver = webdriver.Chrome()
-driver.get("http://www.baidu.com")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+current_file_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+dir = os.path.join(current_file_dir, "data")
+filePath = os.path.join(dir, "account_invite.xlsx")
+print(filePath)
+# all = os.path.join(absolute_path,"all.py")
+# print(all)
