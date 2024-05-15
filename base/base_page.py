@@ -34,10 +34,16 @@ class BasePage:
         except TimeoutException:
             print(f"元素定位超时了，是这个{loc}")
             return None
+
         except Exception as e:
             print(f"元素可能不可交互或者页面未刷新出来，是这个{loc}")
             print(e)
             return None
+
+    def waite_ele(self,loc,timeout=10):
+        return WebDriverWait(self.driver, timeout).until(
+            EC.presence_of_element_located(loc)
+        )
 
     def send_keys(self,loc,value,timeout=10):
         element = self.loctor(loc,timeout)
@@ -134,6 +140,16 @@ class BasePage:
         pyautogui.write(self.get_file_path(filename))
         time.sleep(1)
         pyautogui.press('enter')
+        pyautogui.press('enter')
+
+    def refresh(self):
+        pyautogui.press('f5')
+        time.sleep(3)
+
+    def get_screenshot(self,picture):
+        self.driver.save_screenshot(f"D:\\pythonProject_baili\\screenshot\\{picture}.png")
+
+
 
 
 

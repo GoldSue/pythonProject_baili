@@ -1,47 +1,47 @@
 
 
 
-# import random
-#
-# ele = str(random.randrange(1000000,9999999))
-# lis = ['a','b','c','d','e','f','g','h','i','j']
-# A = random.choice(lis)
-# print("A" + A + ele)
-import os
-import random
 
-import selenium
+import unittest
 from selenium import webdriver
-import chromedriver_autoinstaller
-from selenium.common import TimeoutException
-from selenium.webdriver import ActionChains, Keys
+from selenium.webdriver import Keys, ActionChains
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-# chromedriver_autoinstaller.install()
-
-import configparser
-import os
-import platform
-
-
-    # __file__获取当前这个文件的文件名
-    # os.path.abspath(__file__)获取当前文件的绝对路径，路径包含文件名
-    # os.path.dirname(os.path.abspath(__file__))获取当前文件的绝对路径，不包含文件名
-    # 然后拼接上db.ini文件名，即可获得db.ini的绝对路径
-driver = webdriver.Chrome()
-driver.get("http://www.baidu.com")
+from time import sleep
 
 
 
 
 
+class TestBaidu(unittest.TestCase):
+    def setUp(self):
+        self.driver = webdriver.Chrome()
+        self.driver.maximize_window()
+        self.driver.get("https://www.baidu.com")
+
+    def test_window(self):
+        # ele = self.driver.find_element(By.ID, 'kw')
+
+
+        self.driver.find_element(By.ID,'kw').send_keys('selenium')
+        self.driver.find_element(By.ID,'su').click()
+        sleep(2)
+        js3 = "window.scrollTo(0,1000)"
+        self.driver.execute_script(js3)
+
+        # self.driver.execute_script("window.scrollBy(0,3000;")
+        sleep(5)
+
+        # ele.send_keys(Keys.CONTROL,"x")
+        # sleep(1)
+        # ele.send_keys(Keys.CONTROL,"v")
 
 
 
+    def tearDown(self):
+        self.driver.quit()
 
-
-
+if __name__ == '__main__':
+    unittest.main()
 
 
 

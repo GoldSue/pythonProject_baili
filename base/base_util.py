@@ -14,11 +14,11 @@ class BaseUtil(unittest.TestCase):
         cls.driver = webdriver.Chrome()
         cls.driver.maximize_window()
         cls.driver.get("https://console-paas.digiwincloud.com.cn/login")
-        # cls.driver.implicitly_wait(10)
+        cls.driver.implicitly_wait(20)
         lp = LoginPage(cls.driver)
         lp.login()
         WebDriverWait(cls.driver, 50).until(EC.url_to_be("https://console-paas.digiwincloud.com.cn/"))
-        time.sleep(10)
+
 
 
     @classmethod
