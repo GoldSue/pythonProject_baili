@@ -1,6 +1,9 @@
 from HTMLTestRunner_PY3 import HTMLTestRunner
 import unittest
 
+
+
+
 if __name__ == '__main__':
     #执行需要的测试用例，生成测试报告
     #s使用unittest默认的加载器去 发现testcase下面的所有测试用例

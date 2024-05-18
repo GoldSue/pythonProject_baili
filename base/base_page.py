@@ -11,12 +11,18 @@ from selenium.webdriver import ActionChains, Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import logging.config
 
 
+current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+log = os.path.join(current_dir,'logging.conf')
+logging.config.fileConfig(log)
 
 class BasePage:
     def __init__(self,driver):
         self.driver = driver
+        self.logger = logging.getLogger('fileAndConsole')
+
 
     def loctor(self,loc,timeout=10):
         """
@@ -32,12 +38,12 @@ class BasePage:
 
             return element
         except TimeoutException:
-            print(f"元素定位超时了，是这个{loc}")
+            self.logger.error(f"元素定位超时了，是这个{loc}")
             return None
 
         except Exception as e:
-            print(f"元素可能不可交互或者页面未刷新出来，是这个{loc}")
-            print(e)
+            self.logger.error(f"元素可能不可交互或未加载出，是这个{loc}")
+            self.logger.error(e)
             return None
 
     def waite_ele(self,loc,timeout=10):

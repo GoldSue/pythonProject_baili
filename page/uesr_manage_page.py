@@ -93,6 +93,7 @@ class UserManagePage(BasePage):
 
     #修改用户信息
     def modify_save(self,username="jihi43h",phone=1387766422):
+
         try:
             self.waite_ele(UserManagePage.modify_user_loc)
         except:
@@ -116,6 +117,7 @@ class UserManagePage(BasePage):
 
     #停用用户
     def user_stop(self):
+
         try:
             self.waite_ele(UserManagePage.stop_use_loc)
         except:
@@ -151,6 +153,7 @@ class UserManagePage(BasePage):
 
     #邀请用户
     def invite_user(self,userid=123444344):
+        self.logger.info("执行用例>> 邀请用户")
         try:
             self.waite_ele(UserManagePage.delet_loc)
         except:
@@ -188,6 +191,7 @@ class UserManagePage(BasePage):
 
     def add_user_group(self):
 
+
         self.click(UserManagePage.user_group_loc, 10)
         sleep(3)
         try:
@@ -209,6 +213,7 @@ class UserManagePage(BasePage):
         return self.get_value(UserManagePage.assert_save_loc)
 
     def modify_group(self,group="132erw"):
+
         try:
             self.waite_ele(UserManagePage.user_group_loc)
         except:
@@ -227,6 +232,7 @@ class UserManagePage(BasePage):
 
     #删除用户群组
     def delete_user_group(self):
+
         try:
             self.waite_ele(UserManagePage.user_group_loc)
         except:
