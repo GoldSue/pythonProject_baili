@@ -140,7 +140,7 @@ class BasePage:
         pyautogui.write(self.get_file_path(filename))
         time.sleep(1)
         pyautogui.press('enter')
-        pyautogui.press('enter')
+        # pyautogui.press('enter')
 
     def refresh(self):
         pyautogui.press('f5')

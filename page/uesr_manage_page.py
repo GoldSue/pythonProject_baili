@@ -54,7 +54,7 @@ class UserManagePage(BasePage):
     #新增用户群组
     user_group_url = "https://console-paas.digiwincloud.com.cn/mang-user/organization-mang/org-list"
     user_group_loc = (By.XPATH,'(//div[@class="ant-tabs-tab-btn"])[2]')
-    add_user_group_loc = (By.XPATH,'//span[text()="新增用户群组"]')
+    add_user_group_loc = (By.CLASS_NAME,'user-new-add')
     input_group_id_loc = (By.CSS_SELECTOR,'[placeholder="请输入用户群组ID"]')
     input_group_name_loc = (By.CSS_SELECTOR,'[placeholder="请输入用户群组名称"]')
     button_save_loc = (By.CSS_SELECTOR,'[class="btn ant-btn ant-btn-primary"]')
@@ -72,9 +72,6 @@ class UserManagePage(BasePage):
     delete_user_group_loc = (By.XPATH,'(//a[@angularticslabel="刪除用戶群組"])[last()]')
     delete_confirm_loc = (By.XPATH,'//span[text()=" 确定 "]')
     assert_delete_user_loc = (By.XPATH,'//span[text()="用户群组已删除"]')
-
-
-
 
     #页面操作
     #新增用户
@@ -125,8 +122,8 @@ class UserManagePage(BasePage):
             self.driver.get(UserManagePage.uaser_manage_url)
             sleep(5)
             self.click(UserManagePage.user_manage_loc)
-        self.click(UserManagePage.stop_use_loc,20)
-        self.click(UserManagePage.stop_confirm_loc,20)
+        self.click(UserManagePage.stop_use_loc,10)
+        self.click(UserManagePage.stop_confirm_loc,10)
         sleep(2)
 
     #断言停用成功
@@ -176,41 +173,37 @@ class UserManagePage(BasePage):
     #批量邀请用户
     def invite_users(self,filename="account_invite.xlsx"):
         try:
-            self.waite_ele(UserManagePage.delet_loc)
+            self.waite_ele(UserManagePage.delet_loc,5)
         except:
             self.driver.get(UserManagePage.uaser_manage_url)
-            sleep(5)
             self.click(UserManagePage.user_manage_loc)
-        time.sleep(5)
         self.click(UserManagePage.invite_user_loc)
-        time.sleep(2)
         self.click(UserManagePage.invite_users_manage_loc)
-        time.sleep(3)
+        time.sleep(2)
         self.click(UserManagePage.upload_file_loc)
-        time.sleep(3)
+        time.sleep(2)
         self.upload_file(filename)
-        time.sleep(3)
+        # time.sleep(1)
         self.click(UserManagePage.button_send_file_loc)
-        sleep(2)
 
     def add_user_group(self):
 
+        self.click(UserManagePage.user_group_loc, 10)
+        sleep(3)
         try:
-            self.click(UserManagePage.user_group_loc,10)
-            self.waite_ele(UserManagePage.user_group_loc)
+            self.waite_ele(UserManagePage.add_user_group_loc)
         except:
             self.driver.get(UserManagePage.user_group_url)
-            sleep(5)
-        finally:
-            self.click(UserManagePage.add_user_group_loc)
-            self.send_keys(UserManagePage.input_group_id_loc,self.random())
-            time.sleep(1)
-            self.send_keys(UserManagePage.input_group_name_loc,self.random())
-            time.sleep(1)
-            self.click(UserManagePage.button_save_loc)
-            sleep(3)
-            # self.click(UserManagePage.close_add_window_loc)
-            # sleep(2)
+            sleep(4)
+        self.click(UserManagePage.add_user_group_loc)
+        self.send_keys(UserManagePage.input_group_id_loc,self.random())
+        time.sleep(1)
+        self.send_keys(UserManagePage.input_group_name_loc,self.random())
+        time.sleep(1)
+        self.click(UserManagePage.button_save_loc)
+        sleep(3)
+        # self.click(UserManagePage.close_add_window_loc)
+        # sleep(2)
 
     def assert_group_save(self):
         return self.get_value(UserManagePage.assert_save_loc)
@@ -222,6 +215,7 @@ class UserManagePage(BasePage):
             self.driver.get(UserManagePage.user_group_url)
             sleep(5)
         self.click(UserManagePage.modifu_group_loc)
+        self.clear(UserManagePage.modify_group_name_loc)
         self.send_keys(UserManagePage.modify_group_name_loc,group)
         self.click(UserManagePage.modify_kenel_loc)
         self.click(UserManagePage.modify_dep_loc)
