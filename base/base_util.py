@@ -3,7 +3,7 @@ import unittest
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from page.login_page import LoginPage
+from pages.login_page import LoginPage
 import os
 import logging.config
 

@@ -18,13 +18,13 @@ current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 log = os.path.join(current_dir,'logging.conf')
 logging.config.fileConfig(log)
 
+
 class BasePage:
     def __init__(self,driver):
         self.driver = driver
         self.logger = logging.getLogger('fileAndConsole')
 
-
-    def loctor(self,loc,timeout=10):
+    def loctor(self,loc,timeout=5):
         """
         定位元素的方法，加入显示等待和try异常返回，一般用来定位到元素来进行下一步操作
         :param loc: 元素定位
@@ -154,6 +154,13 @@ class BasePage:
 
     def get_screenshot(self,picture):
         self.driver.save_screenshot(f"D:\\pythonProject_baili\\screenshot\\{picture}.png")
+
+    def refresh_url(self,url):
+        self.driver.get(url)
+
+    def clear_input(self,loc,text):
+        self.clear(loc)
+        self.send_keys(loc,text)
 
 
 

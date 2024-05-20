@@ -1,8 +1,8 @@
 
 
 from base.base_util import BaseUtil
-from page.login_page import LoginPage
-from page.uesr_manage_page import UserManagePage
+from pages.login_page import LoginPage
+from pages.uesr_manage_page import UserManagePage
 
 
 class TestUserManage(BaseUtil):

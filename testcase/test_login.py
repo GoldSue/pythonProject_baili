@@ -4,7 +4,7 @@ import chromedriver_autoinstaller
 from selenium import webdriver
 from ddt import ddt, data
 from common.excel_util import ExcelUtil
-from page.login_page import LoginPage
+from pages.login_page import LoginPage
 chromedriver_autoinstaller.install()
 from ddt import ddt, data,unpack
 import os

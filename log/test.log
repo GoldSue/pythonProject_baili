@@ -1,0 +1,854 @@
+2024-05-18 17:10:11 - test_case001 - 11964 - DEBUG : debug
+2024-05-18 17:10:11 - test_case001 - 11964 - INFO : info
+2024-05-18 17:10:11 - test_case001 - 11964 - WARNING : warn
+2024-05-18 17:10:11 - test_case001 - 11964 - ERROR : error
+2024-05-18 17:10:11 - test_case001 - 11964 - CRITICAL : critical
+2024-05-18 17:15:42 - test_case001 - 10936 - DEBUG : debug
+2024-05-18 17:15:42 - test_case001 - 10936 - INFO : info
+2024-05-18 17:15:42 - test_case001 - 10936 - WARNING : warn
+2024-05-18 17:15:42 - test_case001 - 10936 - ERROR : error
+2024-05-18 17:15:42 - test_case001 - 10936 - CRITICAL : critical
+2024-05-18 17:15:47 - test_case001 - 21172 - DEBUG : debug
+2024-05-18 17:15:47 - test_case001 - 21172 - INFO : info
+2024-05-18 17:15:47 - test_case001 - 21172 - WARNING : warn
+2024-05-18 17:15:47 - test_case001 - 21172 - ERROR : error
+2024-05-18 17:15:47 - test_case001 - 21172 - CRITICAL : critical
+2024-05-18 17:15:57 - test_case001 - 11728 - DEBUG : debug
+2024-05-18 17:15:57 - test_case001 - 11728 - INFO : info
+2024-05-18 17:15:57 - test_case001 - 11728 - WARNING : warn
+2024-05-18 17:15:57 - test_case001 - 11728 - ERROR : error
+2024-05-18 17:15:57 - test_case001 - 11728 - CRITICAL : critical
+2024-05-18 17:16:01 - test_case001 - 9812 - DEBUG : debug
+2024-05-18 17:16:01 - test_case001 - 9812 - INFO : info
+2024-05-18 17:16:01 - test_case001 - 9812 - WARNING : warn
+2024-05-18 17:16:01 - test_case001 - 9812 - ERROR : error
+2024-05-18 17:16:01 - test_case001 - 9812 - CRITICAL : critical
+2024-05-18 17:16:50 - test_case001 - 15436 - DEBUG : 中文
+2024-05-18 17:16:50 - test_case001 - 15436 - INFO : 英文
+2024-05-18 17:16:50 - test_case001 - 15436 - WARNING : 汉语
+2024-05-18 17:16:50 - test_case001 - 15436 - ERROR : error
+2024-05-18 17:16:50 - test_case001 - 15436 - CRITICAL : critical
+2024-05-18 17:17:11 - test_case001 - 8244 - DEBUG : 中文
+2024-05-18 17:17:11 - test_case001 - 8244 - INFO : 英文
+2024-05-18 17:17:11 - test_case001 - 8244 - WARNING : 汉语
+2024-05-18 17:17:11 - test_case001 - 8244 - ERROR : error
+2024-05-18 17:17:11 - test_case001 - 8244 - CRITICAL : critical
+2024-05-18 17:23:39 - test_case001 - 2468 - DEBUG : 中文
+2024-05-18 17:23:39 - test_case001 - 2468 - INFO : 英文
+2024-05-18 17:23:39 - test_case001 - 2468 - WARNING : 汉语
+2024-05-18 17:23:39 - test_case001 - 2468 - ERROR : error
+2024-05-18 17:23:39 - test_case001 - 2468 - CRITICAL : critical
+2024-05-18 17:27:03 - uesr_manage_page - 8156 - INFO : >> 新增用户群组
+2024-05-18 17:31:02 - uesr_manage_page - 15492 - INFO : 执行用例>> 新增用户
+2024-05-18 17:31:09 - uesr_manage_page - 15492 - INFO : 执行用例>> 修改用户
+2024-05-18 17:31:20 - uesr_manage_page - 15492 - INFO : 执行用例>> 停用用户
+2024-05-18 17:31:23 - uesr_manage_page - 15492 - INFO : 执行用例>> 删除用户
+2024-05-18 17:31:33 - uesr_manage_page - 15492 - INFO : 执行用例>> 邀请用户
+2024-05-18 17:31:44 - uesr_manage_page - 15492 - INFO : 执行用例>> 批量邀请用户
+2024-05-18 17:31:50 - uesr_manage_page - 15492 - INFO : 执行用例>> 新增用户群组
+2024-05-18 17:32:00 - uesr_manage_page - 15492 - INFO : 执行用例>> 修改用户群组
+2024-05-18 17:32:03 - uesr_manage_page - 15492 - INFO : 执行用例>> 删除用户群组
+2024-05-18 17:35:39 - uesr_manage_page - 13652 - INFO : 执行用例>> 新增用户
+2024-05-18 17:35:46 - uesr_manage_page - 13652 - INFO : 执行用例>> 修改用户
+2024-05-18 17:35:57 - uesr_manage_page - 13652 - INFO : 执行用例>> 停用用户
+2024-05-18 17:36:00 - uesr_manage_page - 13652 - INFO : 执行用例>> 删除用户
+2024-05-18 17:36:11 - uesr_manage_page - 13652 - INFO : 执行用例>> 邀请用户
+2024-05-18 17:36:22 - uesr_manage_page - 13652 - INFO : 执行用例>> 批量邀请用户
+2024-05-18 17:36:38 - base_page - 13652 - ERROR : 元素定位超时了，是这个('css selector', '[angularticscategory="用戶管理-送出批量邀請訊息"]')
+2024-05-18 17:36:38 - uesr_manage_page - 13652 - INFO : 执行用例>> 新增用户群组
+2024-05-18 17:36:39 - uesr_manage_page - 13652 - INFO : 执行用例>> 修改用户群组
+2024-05-18 17:36:59 - base_page - 13652 - ERROR : 元素定位超时了，是这个('xpath', '(//a[text()=" 修改 "])[last()]')
+2024-05-18 17:36:59 - uesr_manage_page - 13652 - INFO : 执行用例>> 删除用户群组
+2024-05-18 17:37:20 - base_page - 13652 - ERROR : 元素定位超时了，是这个('xpath', '(//a[@angularticslabel="刪除用戶群組"])[last()]')
+2024-05-18 17:46:03 - uesr_manage_page - 16084 - INFO : 执行用例>> 新增用户
+2024-05-18 17:46:11 - uesr_manage_page - 16084 - INFO : 执行用例>> 修改用户
+2024-05-18 17:46:21 - uesr_manage_page - 16084 - INFO : 执行用例>> 停用用户
+2024-05-18 17:46:24 - uesr_manage_page - 16084 - INFO : 执行用例>> 删除用户
+2024-05-18 17:46:34 - uesr_manage_page - 16084 - INFO : 执行用例>> 邀请用户
+2024-05-18 17:46:45 - uesr_manage_page - 16084 - INFO : 执行用例>> 批量邀请用户
+2024-05-18 17:46:51 - uesr_manage_page - 16084 - INFO : 执行用例>> 新增用户群组
+2024-05-18 17:47:01 - uesr_manage_page - 16084 - INFO : 执行用例>> 修改用户群组
+2024-05-18 17:47:04 - uesr_manage_page - 16084 - INFO : 执行用例>> 删除用户群组
+2024-05-18 17:47:37 - uesr_manage_page - 3632 - INFO : 执行用例>> 新增用户
+2024-05-18 17:47:45 - uesr_manage_page - 3632 - INFO : 执行用例>> 修改用户
+2024-05-18 17:47:55 - uesr_manage_page - 3632 - INFO : 执行用例>> 停用用户
+2024-05-18 17:47:58 - uesr_manage_page - 3632 - INFO : 执行用例>> 删除用户
+2024-05-18 17:48:08 - uesr_manage_page - 3632 - INFO : 执行用例>> 邀请用户
+2024-05-18 17:48:20 - uesr_manage_page - 3632 - INFO : 执行用例>> 批量邀请用户
+2024-05-18 17:48:25 - uesr_manage_page - 3632 - INFO : 执行用例>> 新增用户群组
+2024-05-18 17:48:35 - uesr_manage_page - 3632 - INFO : 执行用例>> 修改用户群组
+2024-05-18 17:48:39 - uesr_manage_page - 3632 - INFO : 执行用例>> 删除用户群组
+2024-05-18 18:34:19 - base_util - 20532 - INFO : 开始自行前置操作
+2024-05-18 18:34:30 - test_user_manager - 20532 - INFO : 执行用例>> 新增用户
+2024-05-18 18:34:30 - uesr_manage_page - 20532 - INFO : 执行用例>> 新增用户
+2024-05-18 18:34:38 - test_user_manager - 20532 - INFO : >> 执行成功
+2024-05-18 18:34:38 - test_user_manager - 20532 - INFO : 执行用例>> 修改用户
+2024-05-18 18:34:49 - test_user_manager - 20532 - INFO : >> 执行成功
+2024-05-18 18:34:49 - test_user_manager - 20532 - INFO : 执行用例>> 停用用户
+2024-05-18 18:34:52 - test_user_manager - 20532 - INFO : >> 执行成功
+2024-05-18 18:34:52 - test_user_manager - 20532 - INFO : 执行用例>> 删除用户
+2024-05-18 18:35:02 - test_user_manager - 20532 - INFO : >> 执行成功
+2024-05-18 18:35:02 - test_user_manager - 20532 - INFO : 执行用例>> 邀请用户
+2024-05-18 18:35:02 - uesr_manage_page - 20532 - INFO : 执行用例>> 邀请用户
+2024-05-18 18:35:13 - test_user_manager - 20532 - INFO : >> 执行成功
+2024-05-18 18:35:13 - test_user_manager - 20532 - INFO : 执行用例>> 批量邀请用户
+2024-05-18 18:35:22 - test_user_manager - 20532 - INFO : >> 执行成功
+2024-05-18 18:35:22 - test_user_manager - 20532 - INFO : 执行用例>> 新增用户群组
+2024-05-18 18:35:31 - test_user_manager - 20532 - INFO : >> 执行成功
+2024-05-18 18:35:31 - test_user_manager - 20532 - INFO : 执行用例>> 修改用户群组
+2024-05-18 18:35:35 - test_user_manager - 20532 - INFO : >> 执行成功
+2024-05-18 18:35:35 - test_user_manager - 20532 - INFO : 执行用例>> 删除用户群组
+2024-05-18 18:35:38 - test_user_manager - 20532 - INFO : >> 执行成功
+2024-05-18 18:41:38 - test_case001 - 13804 - DEBUG : 中文
+2024-05-18 18:41:38 - test_case001 - 13804 - INFO : 英文
+2024-05-18 18:41:38 - test_case001 - 13804 - WARNING : 汉语
+2024-05-18 18:41:38 - test_case001 - 13804 - ERROR : error
+2024-05-18 18:41:38 - test_case001 - 13804 - CRITICAL : critical
+2024-05-18 18:43:44 - test_case001 - 16148 - DEBUG : 中文
+2024-05-18 18:43:44 - test_case001 - 16148 - INFO : 英文
+2024-05-18 18:43:44 - test_case001 - 16148 - WARNING : 汉语
+2024-05-18 18:43:44 - test_case001 - 16148 - ERROR : error
+2024-05-18 18:43:44 - test_case001 - 16148 - CRITICAL : critical
+2024-05-18 18:49:06 - test_login - 16148 - INFO : 用户名:18538231111 密码:Gold7789
+2024-05-18 18:50:04 - test_login - 16148 - INFO : 用户名:18538231111 密码:Gold7788
+2024-05-18 18:50:11 - test_login - 16148 - INFO : 用户名:18538231112 密码:Gold7789
+2024-05-18 18:50:16 - base_util - 16148 - INFO : 开始执行前置操作
+2024-05-18 18:50:21 - test_user_manager - 16148 - INFO : 执行用例>> 新增用户
+2024-05-18 18:50:21 - uesr_manage_page - 16148 - INFO : 执行用例>> 新增用户
+2024-05-18 18:50:37 - base_page - 16148 - ERROR : 元素定位超时了，是这个('xpath', '//input[@class="ant-input ng-tns-c73-28 ng-untouched ng-pristine ng-invalid"]')
+2024-05-18 18:50:37 - test_user_manager - 16148 - INFO : 执行用例>> 修改用户
+2024-05-18 18:50:38 - test_user_manager - 16148 - INFO : 执行用例>> 停用用户
+2024-05-18 18:50:39 - test_user_manager - 16148 - INFO : 执行用例>> 删除用户
+2024-05-18 18:51:09 - base_page - 16148 - ERROR : 元素定位超时了，是这个('xpath', '//span[text()=" 确定 "]')
+2024-05-18 18:51:09 - test_user_manager - 16148 - INFO : 执行用例>> 邀请用户
+2024-05-18 18:51:09 - uesr_manage_page - 16148 - INFO : 执行用例>> 邀请用户
+2024-05-18 18:51:15 - test_user_manager - 16148 - INFO : 执行用例>> 批量邀请用户
+2024-05-18 18:51:16 - test_user_manager - 16148 - INFO : 执行用例>> 新增用户群组
+2024-05-18 18:51:17 - test_user_manager - 16148 - INFO : 执行用例>> 修改用户群组
+2024-05-18 18:51:27 - base_page - 16148 - ERROR : 元素定位超时了，是这个('xpath', '(//a[text()=" 修改 "])[last()]')
+2024-05-18 18:51:27 - test_user_manager - 16148 - INFO : 执行用例>> 删除用户群组
+2024-05-18 18:51:38 - base_page - 16148 - ERROR : 元素定位超时了，是这个('xpath', '(//a[@angularticslabel="刪除用戶群組"])[last()]')
+2024-05-18 18:54:56 - test_case001 - 21016 - DEBUG : 中文
+2024-05-18 18:54:56 - test_case001 - 21016 - INFO : 英文
+2024-05-18 18:54:56 - test_case001 - 21016 - WARNING : 汉语
+2024-05-18 18:54:56 - test_case001 - 21016 - ERROR : error
+2024-05-18 18:54:56 - test_case001 - 21016 - CRITICAL : critical
+2024-05-18 18:55:01 - test_login - 21016 - INFO : 用户名:18538231111 密码:Gold7789
+2024-05-18 18:55:09 - test_login - 21016 - INFO : 用户名:18538231111 密码:Gold7788
+2024-05-18 18:55:16 - test_login - 21016 - INFO : 用户名:18538231112 密码:Gold7789
+2024-05-18 18:55:21 - base_util - 21016 - INFO : 开始执行前置操作
+2024-05-18 18:55:23 - test_user_manager - 21016 - INFO : 执行用例>> 新增用户
+2024-05-18 18:55:31 - test_user_manager - 21016 - INFO : 执行成功
+2024-05-18 18:55:31 - test_user_manager - 21016 - INFO : 执行用例>> 修改用户
+2024-05-18 18:55:41 - test_user_manager - 21016 - INFO : 执行成功
+2024-05-18 18:55:41 - test_user_manager - 21016 - INFO : 执行用例>> 停用用户
+2024-05-18 18:55:44 - test_user_manager - 21016 - INFO : 执行成功
+2024-05-18 18:55:44 - test_user_manager - 21016 - INFO : 执行用例>> 删除用户
+2024-05-18 18:55:54 - test_user_manager - 21016 - INFO : 执行成功
+2024-05-18 18:55:54 - test_user_manager - 21016 - INFO : 执行用例>> 邀请用户
+2024-05-18 18:55:54 - uesr_manage_page - 21016 - INFO : 执行用例>> 邀请用户
+2024-05-18 18:56:06 - test_user_manager - 21016 - INFO : 执行成功
+2024-05-18 18:56:06 - test_user_manager - 21016 - INFO : 执行用例>> 批量邀请用户
+2024-05-18 18:56:15 - test_user_manager - 21016 - INFO : 执行成功
+2024-05-18 18:56:15 - test_user_manager - 21016 - INFO : 执行用例>> 新增用户群组
+2024-05-18 18:56:24 - test_user_manager - 21016 - INFO : 执行成功
+2024-05-18 18:56:24 - test_user_manager - 21016 - INFO : 执行用例>> 修改用户群组
+2024-05-18 18:56:28 - test_user_manager - 21016 - INFO : 执行成功
+2024-05-18 18:56:28 - test_user_manager - 21016 - INFO : 执行用例>> 删除用户群组
+2024-05-18 18:56:31 - test_user_manager - 21016 - INFO : 执行成功
+2024-05-18 19:12:28 - test_case001 - 14008 - DEBUG : 中文
+2024-05-18 19:12:28 - test_case001 - 14008 - INFO : 英文
+2024-05-18 19:12:28 - test_case001 - 14008 - WARNING : 汉语
+2024-05-18 19:12:28 - test_case001 - 14008 - ERROR : error
+2024-05-18 19:12:28 - test_case001 - 14008 - CRITICAL : critical
+2024-05-18 19:13:26 - test_login - 14008 - INFO : 测试登录前置操作
+2024-05-18 19:13:27 - test_login - 14008 - INFO : 用户名:18538231111 密码:Gold7789
+2024-05-18 19:13:34 - test_login - 14008 - INFO : 测试登录前置操作
+2024-05-18 19:13:35 - test_login - 14008 - INFO : 用户名:18538231111 密码:Gold7788
+2024-05-18 19:13:43 - test_login - 14008 - INFO : 测试登录前置操作
+2024-05-18 19:13:44 - test_login - 14008 - INFO : 用户名:18538231112 密码:Gold7789
+2024-05-18 19:13:49 - base_util - 14008 - INFO : 开始执行前置操作
+2024-05-18 19:13:51 - test_user_manager - 14008 - INFO : 执行用例>> 新增用户
+2024-05-18 19:13:59 - test_user_manager - 14008 - INFO : 执行成功
+2024-05-18 19:13:59 - test_user_manager - 14008 - INFO : 执行用例>> 修改用户
+2024-05-18 19:14:09 - test_user_manager - 14008 - INFO : 执行成功
+2024-05-18 19:14:09 - test_user_manager - 14008 - INFO : 执行用例>> 停用用户
+2024-05-18 19:14:12 - test_user_manager - 14008 - INFO : 执行成功
+2024-05-18 19:14:12 - test_user_manager - 14008 - INFO : 执行用例>> 删除用户
+2024-05-18 19:14:22 - test_user_manager - 14008 - INFO : 执行成功
+2024-05-18 19:14:22 - test_user_manager - 14008 - INFO : 执行用例>> 邀请用户
+2024-05-18 19:14:22 - uesr_manage_page - 14008 - INFO : 执行用例>> 邀请用户
+2024-05-18 19:14:33 - test_user_manager - 14008 - INFO : 执行成功
+2024-05-18 19:14:33 - test_user_manager - 14008 - INFO : 执行用例>> 批量邀请用户
+2024-05-18 19:14:39 - test_user_manager - 14008 - INFO : 执行成功
+2024-05-18 19:14:39 - test_user_manager - 14008 - INFO : 执行用例>> 新增用户群组
+2024-05-18 19:14:48 - test_user_manager - 14008 - INFO : 执行成功
+2024-05-18 19:14:48 - test_user_manager - 14008 - INFO : 执行用例>> 修改用户群组
+2024-05-18 19:14:52 - test_user_manager - 14008 - INFO : 执行成功
+2024-05-18 19:14:52 - test_user_manager - 14008 - INFO : 执行用例>> 删除用户群组
+2024-05-18 19:14:55 - test_user_manager - 14008 - INFO : 执行成功
+2024-05-19 09:20:25 - test_case001 - 5772 - DEBUG : 中文
+2024-05-19 09:20:25 - test_case001 - 5772 - INFO : 英文
+2024-05-19 09:20:25 - test_case001 - 5772 - WARNING : 汉语
+2024-05-19 09:20:25 - test_case001 - 5772 - ERROR : error
+2024-05-19 09:20:25 - test_case001 - 5772 - CRITICAL : critical
+2024-05-19 09:22:17 - base_util - 5772 - INFO : 开始执行前置操作
+2024-05-19 09:22:20 - test_user_manager - 5772 - INFO : 执行用例>> 新增用户
+2024-05-19 09:22:28 - test_user_manager - 5772 - INFO : 执行成功
+2024-05-19 09:22:28 - test_user_manager - 5772 - INFO : 执行用例>> 修改用户
+2024-05-19 09:22:38 - test_user_manager - 5772 - INFO : 执行成功
+2024-05-19 09:22:38 - test_user_manager - 5772 - INFO : 执行用例>> 停用用户
+2024-05-19 09:22:41 - test_user_manager - 5772 - INFO : 执行成功
+2024-05-19 09:22:41 - test_user_manager - 5772 - INFO : 执行用例>> 删除用户
+2024-05-19 09:22:51 - test_user_manager - 5772 - INFO : 执行成功
+2024-05-19 09:22:51 - test_user_manager - 5772 - INFO : 执行用例>> 邀请用户
+2024-05-19 09:22:51 - uesr_manage_page - 5772 - INFO : 执行用例>> 邀请用户
+2024-05-19 09:23:02 - test_user_manager - 5772 - INFO : 执行成功
+2024-05-19 09:23:02 - test_user_manager - 5772 - INFO : 执行用例>> 批量邀请用户
+2024-05-19 09:23:08 - test_user_manager - 5772 - INFO : 执行成功
+2024-05-19 09:23:08 - test_user_manager - 5772 - INFO : 执行用例>> 新增用户群组
+2024-05-19 09:23:17 - test_user_manager - 5772 - INFO : 执行成功
+2024-05-19 09:23:17 - test_user_manager - 5772 - INFO : 执行用例>> 修改用户群组
+2024-05-19 09:23:21 - test_user_manager - 5772 - INFO : 执行成功
+2024-05-19 09:23:21 - test_user_manager - 5772 - INFO : 执行用例>> 删除用户群组
+2024-05-19 09:23:24 - test_user_manager - 5772 - INFO : 执行成功
+2024-05-19 09:25:40 - test_case001 - 23616 - DEBUG : 中文
+2024-05-19 09:25:40 - test_case001 - 23616 - INFO : 英文
+2024-05-19 09:25:40 - test_case001 - 23616 - WARNING : 汉语
+2024-05-19 09:25:40 - test_case001 - 23616 - ERROR : 日志
+2024-05-19 09:25:40 - test_case001 - 23616 - CRITICAL : 开始
+2024-05-19 09:26:09 - test_login - 23616 - INFO : 测试登录前置操作
+2024-05-19 09:26:09 - test_login - 23616 - INFO : 用户名:18538231111 密码:Gold7789
+2024-05-19 09:26:16 - test_login - 23616 - INFO : 测试登录前置操作
+2024-05-19 09:26:17 - test_login - 23616 - INFO : 用户名:18538231111 密码:Gold7788
+2024-05-19 09:26:23 - test_login - 23616 - INFO : 测试登录前置操作
+2024-05-19 09:26:24 - test_login - 23616 - INFO : 用户名:18538231112 密码:Gold7789
+2024-05-19 09:26:30 - base_util - 23616 - INFO : 开始执行前置操作
+2024-05-19 09:26:32 - test_user_manager - 23616 - INFO : 执行用例>> 新增用户
+2024-05-19 09:26:39 - test_user_manager - 23616 - INFO : 执行成功
+2024-05-19 09:26:39 - test_user_manager - 23616 - INFO : 执行用例>> 修改用户
+2024-05-19 09:26:50 - test_user_manager - 23616 - INFO : 执行成功
+2024-05-19 09:26:50 - test_user_manager - 23616 - INFO : 执行用例>> 停用用户
+2024-05-19 09:26:52 - test_user_manager - 23616 - INFO : 执行成功
+2024-05-19 09:26:52 - test_user_manager - 23616 - INFO : 执行用例>> 删除用户
+2024-05-19 09:27:02 - test_user_manager - 23616 - INFO : 执行成功
+2024-05-19 09:27:02 - test_user_manager - 23616 - INFO : 执行用例>> 邀请用户
+2024-05-19 09:27:02 - uesr_manage_page - 23616 - INFO : 执行用例>> 邀请用户
+2024-05-19 09:27:14 - test_user_manager - 23616 - INFO : 执行成功
+2024-05-19 09:27:14 - test_user_manager - 23616 - INFO : 执行用例>> 批量邀请用户
+2024-05-19 09:27:20 - test_user_manager - 23616 - INFO : 执行成功
+2024-05-19 09:27:20 - test_user_manager - 23616 - INFO : 执行用例>> 新增用户群组
+2024-05-19 09:27:29 - test_user_manager - 23616 - INFO : 执行成功
+2024-05-19 09:27:29 - test_user_manager - 23616 - INFO : 执行用例>> 修改用户群组
+2024-05-19 09:27:33 - test_user_manager - 23616 - INFO : 执行成功
+2024-05-19 09:27:33 - test_user_manager - 23616 - INFO : 执行用例>> 删除用户群组
+2024-05-19 09:27:36 - test_user_manager - 23616 - INFO : 执行成功
+2024-05-20 00:10:20 - test_case001 - 23972 - DEBUG : 中文
+2024-05-20 00:10:20 - test_case001 - 23972 - INFO : 英文
+2024-05-20 00:10:20 - test_case001 - 23972 - WARNING : 汉语
+2024-05-20 00:10:20 - test_case001 - 23972 - ERROR : 日志
+2024-05-20 00:10:20 - test_case001 - 23972 - CRITICAL : 开始
+2024-05-20 00:10:31 - test_login - 23972 - INFO : 测试登录前置操作
+2024-05-20 00:10:33 - test_login - 23972 - INFO : 用户名:18538231111 密码:Gold7789
+2024-05-20 00:10:39 - test_login - 23972 - INFO : 测试登录前置操作
+2024-05-20 00:10:40 - test_login - 23972 - INFO : 用户名:18538231111 密码:Gold7788
+2024-05-20 00:10:46 - test_login - 23972 - INFO : 测试登录前置操作
+2024-05-20 00:10:47 - test_login - 23972 - INFO : 用户名:18538231112 密码:Gold7789
+2024-05-20 00:10:52 - base_util - 23972 - INFO : 开始执行前置操作
+2024-05-20 00:10:54 - test_user_manager - 23972 - INFO : 执行用例>> 新增用户
+2024-05-20 00:11:02 - test_user_manager - 23972 - INFO : 执行成功
+2024-05-20 00:11:02 - test_user_manager - 23972 - INFO : 执行用例>> 修改用户
+2024-05-20 00:11:12 - test_user_manager - 23972 - INFO : 执行成功
+2024-05-20 00:11:12 - test_user_manager - 23972 - INFO : 执行用例>> 停用用户
+2024-05-20 00:11:15 - test_user_manager - 23972 - INFO : 执行成功
+2024-05-20 00:11:15 - test_user_manager - 23972 - INFO : 执行用例>> 删除用户
+2024-05-20 00:11:25 - test_user_manager - 23972 - INFO : 执行成功
+2024-05-20 00:11:25 - test_user_manager - 23972 - INFO : 执行用例>> 邀请用户
+2024-05-20 00:11:25 - uesr_manage_page - 23972 - INFO : 执行用例>> 邀请用户
+2024-05-20 00:11:36 - test_user_manager - 23972 - INFO : 执行成功
+2024-05-20 00:11:36 - test_user_manager - 23972 - INFO : 执行用例>> 批量邀请用户
+2024-05-20 00:11:42 - test_user_manager - 23972 - INFO : 执行成功
+2024-05-20 00:11:42 - test_user_manager - 23972 - INFO : 执行用例>> 新增用户群组
+2024-05-20 00:11:51 - test_user_manager - 23972 - INFO : 执行成功
+2024-05-20 00:11:51 - test_user_manager - 23972 - INFO : 执行用例>> 修改用户群组
+2024-05-20 00:11:54 - test_user_manager - 23972 - INFO : 执行成功
+2024-05-20 00:11:54 - test_user_manager - 23972 - INFO : 执行用例>> 删除用户群组
+2024-05-20 00:11:57 - test_user_manager - 23972 - INFO : 执行成功
+2024-05-20 22:06:31 - base_util - 22468 - INFO : 开始执行前置操作
+2024-05-20 22:06:33 - test_co_operate - 22468 - INFO : 执行用例>> 新增企业
+2024-05-20 22:06:44 - base_page - 22468 - ERROR : 元素定位超时了，是这个('xpath', '//font[text()="新增公司其他"]')
+2024-05-20 22:06:44 - test_co_operate - 22468 - INFO : 执行用例>> 修改企业
+2024-05-20 22:07:05 - base_page - 22468 - ERROR : 元素定位超时了，是这个('xpath', '(//font[text()="修改"])[last()]')
+2024-05-20 22:07:05 - test_co_operate - 22468 - INFO : 执行用例>> 删除企业
+2024-05-20 22:07:26 - base_page - 22468 - ERROR : 元素定位超时了，是这个('xpath', '(//font[text()="删除"])[last()]')
+2024-05-20 22:09:00 - base_util - 21744 - INFO : 开始执行前置操作
+2024-05-20 22:09:03 - test_co_operate - 21744 - INFO : 执行用例>> 新增企业
+2024-05-20 22:09:14 - base_page - 21744 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '//font[text()="新增公司其他"]')
+2024-05-20 22:09:14 - base_page - 21744 - ERROR : Message: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=124.0.6367.209)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70DE61502+60802]
+	(No symbol) [0x00007FF70DDDAC02]
+	(No symbol) [0x00007FF70DC97CE4]
+	(No symbol) [0x00007FF70DC800D4]
+	(No symbol) [0x00007FF70DC8004C]
+	(No symbol) [0x00007FF70DC7E759]
+	(No symbol) [0x00007FF70DC7F3FF]
+	(No symbol) [0x00007FF70DC9B7B9]
+	(No symbol) [0x00007FF70DC9C2B3]
+	(No symbol) [0x00007FF70DCA01DB]
+	(No symbol) [0x00007FF70DCA0280]
+	(No symbol) [0x00007FF70DCE6A11]
+	(No symbol) [0x00007FF70DCE6E1C]
+	(No symbol) [0x00007FF70DD2CE37]
+	(No symbol) [0x00007FF70DD0ABBF]
+	(No symbol) [0x00007FF70DD2A224]
+	(No symbol) [0x00007FF70DD0A923]
+	(No symbol) [0x00007FF70DCD8FEC]
+	(No symbol) [0x00007FF70DCD9C21]
+	GetHandleVerifier [0x00007FF70E16411D+3217821]
+	GetHandleVerifier [0x00007FF70E1A60B7+3488055]
+	GetHandleVerifier [0x00007FF70E19F03F+3459263]
+	GetHandleVerifier [0x00007FF70DF1B846+823494]
+	(No symbol) [0x00007FF70DDE5F9F]
+	(No symbol) [0x00007FF70DDE0EC4]
+	(No symbol) [0x00007FF70DDE1052]
+	(No symbol) [0x00007FF70DDD18A4]
+	BaseThreadInitThunk [0x00007FFE1D1F257D+29]
+	RtlUserThreadStart [0x00007FFE1DEEAA48+40]
+
+2024-05-20 22:09:14 - test_co_operate - 21744 - INFO : 执行用例>> 修改企业
+2024-05-20 22:09:16 - base_page - 21744 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '(//font[text()="修改"])[last()]')
+2024-05-20 22:09:16 - base_page - 21744 - ERROR : Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=124.0.6367.209)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70DE61502+60802]
+	(No symbol) [0x00007FF70DDDAC02]
+	(No symbol) [0x00007FF70DC97CE4]
+	(No symbol) [0x00007FF70DC7FA14]
+	(No symbol) [0x00007FF70DC7F8E0]
+	(No symbol) [0x00007FF70DC9A291]
+	(No symbol) [0x00007FF70DD298F9]
+	(No symbol) [0x00007FF70DD0A923]
+	(No symbol) [0x00007FF70DCD8FEC]
+	(No symbol) [0x00007FF70DCD9C21]
+	GetHandleVerifier [0x00007FF70E16411D+3217821]
+	GetHandleVerifier [0x00007FF70E1A60B7+3488055]
+	GetHandleVerifier [0x00007FF70E19F03F+3459263]
+	GetHandleVerifier [0x00007FF70DF1B846+823494]
+	(No symbol) [0x00007FF70DDE5F9F]
+	(No symbol) [0x00007FF70DDE0EC4]
+	(No symbol) [0x00007FF70DDE1052]
+	(No symbol) [0x00007FF70DDD18A4]
+	BaseThreadInitThunk [0x00007FFE1D1F257D+29]
+	RtlUserThreadStart [0x00007FFE1DEEAA48+40]
+
+2024-05-20 22:09:16 - test_co_operate - 21744 - INFO : 执行用例>> 删除企业
+2024-05-20 22:10:33 - base_util - 23924 - INFO : 开始执行前置操作
+2024-05-20 22:10:49 - base_page - 23924 - ERROR : 元素定位超时了，是这个('xpath', '//font[text()="新增公司其他"]')
+2024-05-20 22:11:12 - base_page - 23924 - ERROR : 元素定位超时了，是这个('xpath', '(//font[text()="修改"])[last()]')
+2024-05-20 22:11:36 - base_page - 23924 - ERROR : 元素定位超时了，是这个('xpath', '(//font[text()="删除"])[last()]')
+2024-05-20 22:18:24 - base_util - 16280 - INFO : 开始执行前置操作
+2024-05-20 22:18:37 - base_page - 16280 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '[class="btn-group"]>a:nth-child(1)')
+2024-05-20 22:18:37 - base_page - 16280 - ERROR : Message: javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression [class=\"btn-group\"]>a:nth-child(1) because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '[class=\"btn-group\"]>a:nth-child(1)' is not a valid XPath expression."}
+  (Session info: chrome=124.0.6367.209)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70DE61502+60802]
+	(No symbol) [0x00007FF70DDDAC02]
+	(No symbol) [0x00007FF70DC97CE4]
+	(No symbol) [0x00007FF70DC9DE26]
+	(No symbol) [0x00007FF70DCA01DB]
+	(No symbol) [0x00007FF70DCA0280]
+	(No symbol) [0x00007FF70DCE6A11]
+	(No symbol) [0x00007FF70DCE6E1C]
+	(No symbol) [0x00007FF70DD2CE37]
+	(No symbol) [0x00007FF70DD0ABBF]
+	(No symbol) [0x00007FF70DD2A224]
+	(No symbol) [0x00007FF70DD0A923]
+	(No symbol) [0x00007FF70DCD8FEC]
+	(No symbol) [0x00007FF70DCD9C21]
+	GetHandleVerifier [0x00007FF70E16411D+3217821]
+	GetHandleVerifier [0x00007FF70E1A60B7+3488055]
+	GetHandleVerifier [0x00007FF70E19F03F+3459263]
+	GetHandleVerifier [0x00007FF70DF1B846+823494]
+	(No symbol) [0x00007FF70DDE5F9F]
+	(No symbol) [0x00007FF70DDE0EC4]
+	(No symbol) [0x00007FF70DDE1052]
+	(No symbol) [0x00007FF70DDD18A4]
+	BaseThreadInitThunk [0x00007FFE1D1F257D+29]
+	RtlUserThreadStart [0x00007FFE1DEEAA48+40]
+
+2024-05-20 22:19:00 - base_page - 16280 - ERROR : 元素定位超时了，是这个('xpath', '(//font[text()="修改"])[last()]')
+2024-05-20 22:19:23 - base_page - 16280 - ERROR : 元素定位超时了，是这个('xpath', '(//font[text()="删除"])[last()]')
+2024-05-20 22:19:41 - base_util - 5736 - INFO : 开始执行前置操作
+2024-05-20 22:19:49 - base_page - 5736 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '[class="btn-group"]>a:nth-child(1)')
+2024-05-20 22:19:49 - base_page - 5736 - ERROR : Message: javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression [class=\"btn-group\"]>a:nth-child(1) because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '[class=\"btn-group\"]>a:nth-child(1)' is not a valid XPath expression."}
+  (Session info: chrome=124.0.6367.209)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70DE61502+60802]
+	(No symbol) [0x00007FF70DDDAC02]
+	(No symbol) [0x00007FF70DC97CE4]
+	(No symbol) [0x00007FF70DC9DE26]
+	(No symbol) [0x00007FF70DCA01DB]
+	(No symbol) [0x00007FF70DCA0280]
+	(No symbol) [0x00007FF70DCE6A11]
+	(No symbol) [0x00007FF70DCE6E1C]
+	(No symbol) [0x00007FF70DD2CE37]
+	(No symbol) [0x00007FF70DD0ABBF]
+	(No symbol) [0x00007FF70DD2A224]
+	(No symbol) [0x00007FF70DD0A923]
+	(No symbol) [0x00007FF70DCD8FEC]
+	(No symbol) [0x00007FF70DCD9C21]
+	GetHandleVerifier [0x00007FF70E16411D+3217821]
+	GetHandleVerifier [0x00007FF70E1A60B7+3488055]
+	GetHandleVerifier [0x00007FF70E19F03F+3459263]
+	GetHandleVerifier [0x00007FF70DF1B846+823494]
+	(No symbol) [0x00007FF70DDE5F9F]
+	(No symbol) [0x00007FF70DDE0EC4]
+	(No symbol) [0x00007FF70DDE1052]
+	(No symbol) [0x00007FF70DDD18A4]
+	BaseThreadInitThunk [0x00007FFE1D1F257D+29]
+	RtlUserThreadStart [0x00007FFE1DEEAA48+40]
+
+2024-05-20 22:20:12 - base_page - 5736 - ERROR : 元素定位超时了，是这个('xpath', '(//font[text()="修改"])[last()]')
+2024-05-20 22:20:35 - base_page - 5736 - ERROR : 元素定位超时了，是这个('xpath', '(//font[text()="删除"])[last()]')
+2024-05-20 22:20:45 - base_util - 24224 - INFO : 开始执行前置操作
+2024-05-20 22:20:47 - base_page - 24224 - ERROR : 元素可能不可交互或未加载出，是这个('css selector', '//span[text()="企业运营"]')
+2024-05-20 22:20:47 - base_page - 24224 - ERROR : Message: javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=124.0.6367.209)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70DE61502+60802]
+	(No symbol) [0x00007FF70DDDAC02]
+	(No symbol) [0x00007FF70DC97CE4]
+	(No symbol) [0x00007FF70DC9DE26]
+	(No symbol) [0x00007FF70DCA01DB]
+	(No symbol) [0x00007FF70DCA0280]
+	(No symbol) [0x00007FF70DCE6A11]
+	(No symbol) [0x00007FF70DCE6E1C]
+	(No symbol) [0x00007FF70DD2CE37]
+	(No symbol) [0x00007FF70DD0ABBF]
+	(No symbol) [0x00007FF70DD2A224]
+	(No symbol) [0x00007FF70DD0A923]
+	(No symbol) [0x00007FF70DCD8FEC]
+	(No symbol) [0x00007FF70DCD9C21]
+	GetHandleVerifier [0x00007FF70E16411D+3217821]
+	GetHandleVerifier [0x00007FF70E1A60B7+3488055]
+	GetHandleVerifier [0x00007FF70E19F03F+3459263]
+	GetHandleVerifier [0x00007FF70DF1B846+823494]
+	(No symbol) [0x00007FF70DDE5F9F]
+	(No symbol) [0x00007FF70DDE0EC4]
+	(No symbol) [0x00007FF70DDE1052]
+	(No symbol) [0x00007FF70DDD18A4]
+	BaseThreadInitThunk [0x00007FFE1D1F257D+29]
+	RtlUserThreadStart [0x00007FFE1DEEAA48+40]
+
+2024-05-20 22:21:11 - base_page - 24224 - ERROR : 元素定位超时了，是这个('xpath', '(//font[text()="修改"])[last()]')
+2024-05-20 22:21:23 - base_util - 12012 - INFO : 开始执行前置操作
+2024-05-20 22:21:42 - base_page - 12012 - ERROR : 元素定位超时了，是这个('css selector', '[placeholder="请输入公司名称"]')
+2024-05-20 22:22:06 - base_page - 12012 - ERROR : 元素定位超时了，是这个('xpath', '(//font[text()="修改"])[last()]')
+2024-05-20 22:22:29 - base_page - 12012 - ERROR : 元素定位超时了，是这个('xpath', '(//font[text()="删除"])[last()]')
+2024-05-20 22:23:54 - base_util - 22672 - INFO : 开始执行前置操作
+2024-05-20 22:24:03 - base_page - 22672 - ERROR : 元素可能不可交互或未加载出，是这个('css selector', '(//div[@class="ant-select-item-option-content"])[1]')
+2024-05-20 22:24:03 - base_page - 22672 - ERROR : Message: javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=124.0.6367.209)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70DE61502+60802]
+	(No symbol) [0x00007FF70DDDAC02]
+	(No symbol) [0x00007FF70DC97CE4]
+	(No symbol) [0x00007FF70DC9DE26]
+	(No symbol) [0x00007FF70DCA01DB]
+	(No symbol) [0x00007FF70DCA0280]
+	(No symbol) [0x00007FF70DCE6A11]
+	(No symbol) [0x00007FF70DCE6E1C]
+	(No symbol) [0x00007FF70DD2CE37]
+	(No symbol) [0x00007FF70DD0ABBF]
+	(No symbol) [0x00007FF70DD2A224]
+	(No symbol) [0x00007FF70DD0A923]
+	(No symbol) [0x00007FF70DCD8FEC]
+	(No symbol) [0x00007FF70DCD9C21]
+	GetHandleVerifier [0x00007FF70E16411D+3217821]
+	GetHandleVerifier [0x00007FF70E1A60B7+3488055]
+	GetHandleVerifier [0x00007FF70E19F03F+3459263]
+	GetHandleVerifier [0x00007FF70DF1B846+823494]
+	(No symbol) [0x00007FF70DDE5F9F]
+	(No symbol) [0x00007FF70DDE0EC4]
+	(No symbol) [0x00007FF70DDE1052]
+	(No symbol) [0x00007FF70DDD18A4]
+	BaseThreadInitThunk [0x00007FFE1D1F257D+29]
+	RtlUserThreadStart [0x00007FFE1DEEAA48+40]
+
+2024-05-20 22:24:26 - base_page - 22672 - ERROR : 元素定位超时了，是这个('xpath', '(//font[text()="修改"])[last()]')
+2024-05-20 22:24:50 - base_page - 22672 - ERROR : 元素定位超时了，是这个('xpath', '(//font[text()="删除"])[last()]')
+2024-05-20 22:26:06 - base_util - 8144 - INFO : 开始执行前置操作
+2024-05-20 22:26:20 - base_page - 8144 - ERROR : 元素定位超时了，是这个('css selector', '[placeholder="请输入ID"]')
+2024-05-20 22:26:43 - base_page - 8144 - ERROR : 元素定位超时了，是这个('xpath', '(//font[text()="修改"])[last()]')
+2024-05-20 22:26:58 - base_util - 20052 - INFO : 开始执行前置操作
+2024-05-20 22:27:40 - base_util - 17400 - INFO : 开始执行前置操作
+2024-05-20 22:27:43 - test_co_operate - 17400 - INFO : 执行用例>> 新增企业
+2024-05-20 22:27:45 - test_co_operate - 17400 - INFO : 执行成功
+2024-05-20 22:28:24 - base_util - 21220 - INFO : 开始执行前置操作
+2024-05-20 22:28:50 - base_page - 21220 - ERROR : 元素定位超时了，是这个('xpath', '(//font[text()="修改"])[last()]')
+2024-05-20 22:31:12 - base_util - 100 - INFO : 开始执行前置操作
+2024-05-20 22:32:48 - base_util - 5836 - INFO : 开始执行前置操作
+2024-05-20 22:32:51 - test_co_operate - 5836 - INFO : 执行用例>> 删除企业
+2024-05-20 22:32:53 - base_page - 5836 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '((//a[text()=" 删除 "])[last()]')
+2024-05-20 22:32:53 - base_page - 5836 - ERROR : Message: javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression ((//a[text()=\" 删除 \"])[last()] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '((//a[text()=\" 删除 \"])[last()]' is not a valid XPath expression."}
+  (Session info: chrome=124.0.6367.209)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70DE61502+60802]
+	(No symbol) [0x00007FF70DDDAC02]
+	(No symbol) [0x00007FF70DC97CE4]
+	(No symbol) [0x00007FF70DC9DE26]
+	(No symbol) [0x00007FF70DCA01DB]
+	(No symbol) [0x00007FF70DCA0280]
+	(No symbol) [0x00007FF70DCE6A11]
+	(No symbol) [0x00007FF70DCE6E1C]
+	(No symbol) [0x00007FF70DD2CE37]
+	(No symbol) [0x00007FF70DD0ABBF]
+	(No symbol) [0x00007FF70DD2A224]
+	(No symbol) [0x00007FF70DD0A923]
+	(No symbol) [0x00007FF70DCD8FEC]
+	(No symbol) [0x00007FF70DCD9C21]
+	GetHandleVerifier [0x00007FF70E16411D+3217821]
+	GetHandleVerifier [0x00007FF70E1A60B7+3488055]
+	GetHandleVerifier [0x00007FF70E19F03F+3459263]
+	GetHandleVerifier [0x00007FF70DF1B846+823494]
+	(No symbol) [0x00007FF70DDE5F9F]
+	(No symbol) [0x00007FF70DDE0EC4]
+	(No symbol) [0x00007FF70DDE1052]
+	(No symbol) [0x00007FF70DDD18A4]
+	BaseThreadInitThunk [0x00007FFE1D1F257D+29]
+	RtlUserThreadStart [0x00007FFE1DEEAA48+40]
+
+2024-05-20 22:33:36 - base_util - 1140 - INFO : 开始执行前置操作
+2024-05-20 22:33:38 - test_co_operate - 1140 - INFO : 执行用例>> 删除企业
+2024-05-20 22:33:41 - base_page - 1140 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '((//a[text()=" 删除 "])[last()]')
+2024-05-20 22:33:41 - base_page - 1140 - ERROR : Message: javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression ((//a[text()=\" 删除 \"])[last()] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '((//a[text()=\" 删除 \"])[last()]' is not a valid XPath expression."}
+  (Session info: chrome=124.0.6367.209)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70DE61502+60802]
+	(No symbol) [0x00007FF70DDDAC02]
+	(No symbol) [0x00007FF70DC97CE4]
+	(No symbol) [0x00007FF70DC9DE26]
+	(No symbol) [0x00007FF70DCA01DB]
+	(No symbol) [0x00007FF70DCA0280]
+	(No symbol) [0x00007FF70DCE6A11]
+	(No symbol) [0x00007FF70DCE6E1C]
+	(No symbol) [0x00007FF70DD2CE37]
+	(No symbol) [0x00007FF70DD0ABBF]
+	(No symbol) [0x00007FF70DD2A224]
+	(No symbol) [0x00007FF70DD0A923]
+	(No symbol) [0x00007FF70DCD8FEC]
+	(No symbol) [0x00007FF70DCD9C21]
+	GetHandleVerifier [0x00007FF70E16411D+3217821]
+	GetHandleVerifier [0x00007FF70E1A60B7+3488055]
+	GetHandleVerifier [0x00007FF70E19F03F+3459263]
+	GetHandleVerifier [0x00007FF70DF1B846+823494]
+	(No symbol) [0x00007FF70DDE5F9F]
+	(No symbol) [0x00007FF70DDE0EC4]
+	(No symbol) [0x00007FF70DDE1052]
+	(No symbol) [0x00007FF70DDD18A4]
+	BaseThreadInitThunk [0x00007FFE1D1F257D+29]
+	RtlUserThreadStart [0x00007FFE1DEEAA48+40]
+
+2024-05-20 22:34:03 - base_util - 23156 - INFO : 开始执行前置操作
+2024-05-20 22:34:05 - test_co_operate - 23156 - INFO : 执行用例>> 删除企业
+2024-05-20 22:34:29 - base_page - 23156 - ERROR : 元素定位超时了，是这个('css selector', '[class="ant-btn ng-tns-c34-76 ant-btn-primary ng-star-inserted"]')
+2024-05-20 22:36:33 - base_util - 8976 - INFO : 开始执行前置操作
+2024-05-20 22:36:36 - test_co_operate - 8976 - INFO : 执行用例>> 删除企业
+2024-05-20 22:36:48 - base_page - 8976 - ERROR : 元素可能不可交互或未加载出，是这个('css selector', '//span[text()=" 确定 "]')
+2024-05-20 22:36:48 - base_page - 8976 - ERROR : Message: javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=124.0.6367.209)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70DE61502+60802]
+	(No symbol) [0x00007FF70DDDAC02]
+	(No symbol) [0x00007FF70DC97CE4]
+	(No symbol) [0x00007FF70DC9DE26]
+	(No symbol) [0x00007FF70DCA01DB]
+	(No symbol) [0x00007FF70DCA0280]
+	(No symbol) [0x00007FF70DCE6A11]
+	(No symbol) [0x00007FF70DCE6E1C]
+	(No symbol) [0x00007FF70DD2CE37]
+	(No symbol) [0x00007FF70DD0ABBF]
+	(No symbol) [0x00007FF70DD2A224]
+	(No symbol) [0x00007FF70DD0A923]
+	(No symbol) [0x00007FF70DCD8FEC]
+	(No symbol) [0x00007FF70DCD9C21]
+	GetHandleVerifier [0x00007FF70E16411D+3217821]
+	GetHandleVerifier [0x00007FF70E1A60B7+3488055]
+	GetHandleVerifier [0x00007FF70E19F03F+3459263]
+	GetHandleVerifier [0x00007FF70DF1B846+823494]
+	(No symbol) [0x00007FF70DDE5F9F]
+	(No symbol) [0x00007FF70DDE0EC4]
+	(No symbol) [0x00007FF70DDE1052]
+	(No symbol) [0x00007FF70DDD18A4]
+	BaseThreadInitThunk [0x00007FFE1D1F257D+29]
+	RtlUserThreadStart [0x00007FFE1DEEAA48+40]
+
+2024-05-20 22:37:12 - base_util - 23416 - INFO : 开始执行前置操作
+2024-05-20 22:37:15 - test_co_operate - 23416 - INFO : 执行用例>> 删除企业
+2024-05-20 22:37:29 - test_co_operate - 23416 - INFO : 执行成功
+2024-05-20 22:38:06 - base_util - 20776 - INFO : 开始执行前置操作
+2024-05-20 22:38:08 - test_co_operate - 20776 - INFO : 执行用例>> 删除企业
+2024-05-20 22:38:22 - test_co_operate - 20776 - INFO : 执行成功
+2024-05-20 22:38:52 - base_util - 18044 - INFO : 开始执行前置操作
+2024-05-20 22:38:54 - test_co_operate - 18044 - INFO : 执行用例>> 新增企业
+2024-05-20 22:38:57 - test_co_operate - 18044 - INFO : 执行成功
+2024-05-20 22:38:57 - test_co_operate - 18044 - INFO : 执行用例>> 修改企业
+2024-05-20 22:39:00 - test_co_operate - 18044 - INFO : 执行成功
+2024-05-20 22:39:00 - test_co_operate - 18044 - INFO : 执行用例>> 删除企业
+2024-05-20 22:39:03 - test_co_operate - 18044 - INFO : 执行成功
+2024-05-20 22:50:40 - base_util - 12584 - INFO : 开始执行前置操作
+2024-05-20 22:50:43 - test_co_operate - 12584 - INFO : 执行用例>> 新增企业
+2024-05-20 22:50:45 - test_co_operate - 12584 - INFO : 执行用例>> 修改企业
+2024-05-20 22:50:50 - test_co_operate - 12584 - INFO : 执行用例>> 删除企业
+2024-05-20 22:50:52 - test_co_operate - 12584 - INFO : 执行成功
+2024-05-20 22:53:40 - base_util - 10128 - INFO : 开始执行前置操作
+2024-05-20 22:53:43 - test_co_operate - 10128 - INFO : 执行用例>> 新增企业
+2024-05-20 22:53:46 - test_co_operate - 10128 - INFO : 执行用例>> 修改企业
+2024-05-20 22:53:50 - test_co_operate - 10128 - INFO : 执行用例>> 删除企业
+2024-05-20 22:53:53 - test_co_operate - 10128 - INFO : 执行成功
+2024-05-20 22:54:49 - base_util - 7092 - INFO : 开始执行前置操作
+2024-05-20 22:54:52 - test_co_operate - 7092 - INFO : 执行用例>> 新增企业
+2024-05-20 22:54:55 - test_co_operate - 7092 - INFO : 执行用例>> 修改企业
+2024-05-20 22:54:59 - test_co_operate - 7092 - INFO : 执行用例>> 删除企业
+2024-05-20 22:55:02 - test_co_operate - 7092 - INFO : 执行成功
+2024-05-20 22:58:30 - base_util - 14224 - INFO : 开始执行前置操作
+2024-05-20 22:58:33 - test_co_operate - 14224 - INFO : 执行用例>> 新增企业
+2024-05-20 22:58:35 - base_page - 14224 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '[class="ant-message-custom-content ng-tns-c62-59 ant-message-success"]')
+2024-05-20 22:58:35 - base_page - 14224 - ERROR : Message: javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression [class=\"ant-message-custom-content ng-tns-c62-59 ant-message-success\"] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '[class=\"ant-message-custom-content ng-tns-c62-59 ant-message-success\"]' is not a valid XPath expression."}
+  (Session info: chrome=124.0.6367.209)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70DE61502+60802]
+	(No symbol) [0x00007FF70DDDAC02]
+	(No symbol) [0x00007FF70DC97CE4]
+	(No symbol) [0x00007FF70DC9DE26]
+	(No symbol) [0x00007FF70DCA01DB]
+	(No symbol) [0x00007FF70DCA0280]
+	(No symbol) [0x00007FF70DCE6A11]
+	(No symbol) [0x00007FF70DCE6E1C]
+	(No symbol) [0x00007FF70DD2CE37]
+	(No symbol) [0x00007FF70DD0ABBF]
+	(No symbol) [0x00007FF70DD2A224]
+	(No symbol) [0x00007FF70DD0A923]
+	(No symbol) [0x00007FF70DCD8FEC]
+	(No symbol) [0x00007FF70DCD9C21]
+	GetHandleVerifier [0x00007FF70E16411D+3217821]
+	GetHandleVerifier [0x00007FF70E1A60B7+3488055]
+	GetHandleVerifier [0x00007FF70E19F03F+3459263]
+	GetHandleVerifier [0x00007FF70DF1B846+823494]
+	(No symbol) [0x00007FF70DDE5F9F]
+	(No symbol) [0x00007FF70DDE0EC4]
+	(No symbol) [0x00007FF70DDE1052]
+	(No symbol) [0x00007FF70DDD18A4]
+	BaseThreadInitThunk [0x00007FFE1D1F257D+29]
+	RtlUserThreadStart [0x00007FFE1DEEAA48+40]
+
+2024-05-20 22:58:35 - test_co_operate - 14224 - INFO : 执行用例>> 修改企业
+2024-05-20 22:58:40 - test_co_operate - 14224 - INFO : 执行用例>> 删除企业
+2024-05-20 22:58:43 - test_co_operate - 14224 - INFO : 执行成功
+2024-05-20 23:07:15 - base_util - 24164 - INFO : 开始执行前置操作
+2024-05-20 23:07:29 - test_co_operate - 24164 - INFO : 执行用例>> 新增企业
+2024-05-20 23:07:40 - test_co_operate - 24164 - INFO : 执行用例>> 修改企业
+2024-05-20 23:07:44 - test_co_operate - 24164 - INFO : 执行用例>> 删除企业
+2024-05-20 23:07:47 - test_co_operate - 24164 - INFO : 执行成功
+2024-05-20 23:10:51 - base_util - 16512 - INFO : 开始执行前置操作
+2024-05-20 23:10:59 - test_co_operate - 16512 - INFO : 执行用例>> 新增企业
+2024-05-20 23:12:58 - base_util - 16272 - INFO : 开始执行前置操作
+2024-05-20 23:13:15 - base_page - 16272 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '//input[@formcontrolname="userId"]')
+2024-05-20 23:13:15 - base_page - 16272 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=124.0.6367.209)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70DE61502+60802]
+	(No symbol) [0x00007FF70DDDAC02]
+	(No symbol) [0x00007FF70DC97CE4]
+	(No symbol) [0x00007FF70DC6DFDF]
+	(No symbol) [0x00007FF70DD11E57]
+	(No symbol) [0x00007FF70DD298D1]
+	(No symbol) [0x00007FF70DD0A923]
+	(No symbol) [0x00007FF70DCD8FEC]
+	(No symbol) [0x00007FF70DCD9C21]
+	GetHandleVerifier [0x00007FF70E16411D+3217821]
+	GetHandleVerifier [0x00007FF70E1A60B7+3488055]
+	GetHandleVerifier [0x00007FF70E19F03F+3459263]
+	GetHandleVerifier [0x00007FF70DF1B846+823494]
+	(No symbol) [0x00007FF70DDE5F9F]
+	(No symbol) [0x00007FF70DDE0EC4]
+	(No symbol) [0x00007FF70DDE1052]
+	(No symbol) [0x00007FF70DDD18A4]
+	BaseThreadInitThunk [0x00007FFE1D1F257D+29]
+	RtlUserThreadStart [0x00007FFE1DEEAA48+40]
+
+2024-05-20 23:13:20 - base_util - 24324 - INFO : 开始执行前置操作
+2024-05-20 23:13:23 - test_co_operate - 24324 - INFO : 执行用例>> 新增企业
+2024-05-20 23:16:36 - base_util - 23692 - INFO : 开始执行前置操作
+2024-05-20 23:16:45 - base_page - 23692 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '//input[@formcontrolname="userId"]')
+2024-05-20 23:16:45 - base_page - 23692 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=124.0.6367.209)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70DE61502+60802]
+	(No symbol) [0x00007FF70DDDAC02]
+	(No symbol) [0x00007FF70DC97CE4]
+	(No symbol) [0x00007FF70DC6DFDF]
+	(No symbol) [0x00007FF70DD11E57]
+	(No symbol) [0x00007FF70DD298D1]
+	(No symbol) [0x00007FF70DD0A923]
+	(No symbol) [0x00007FF70DCD8FEC]
+	(No symbol) [0x00007FF70DCD9C21]
+	GetHandleVerifier [0x00007FF70E16411D+3217821]
+	GetHandleVerifier [0x00007FF70E1A60B7+3488055]
+	GetHandleVerifier [0x00007FF70E19F03F+3459263]
+	GetHandleVerifier [0x00007FF70DF1B846+823494]
+	(No symbol) [0x00007FF70DDE5F9F]
+	(No symbol) [0x00007FF70DDE0EC4]
+	(No symbol) [0x00007FF70DDE1052]
+	(No symbol) [0x00007FF70DDD18A4]
+	BaseThreadInitThunk [0x00007FFE1D1F257D+29]
+	RtlUserThreadStart [0x00007FFE1DEEAA48+40]
+
+2024-05-20 23:16:52 - base_util - 26288 - INFO : 开始执行前置操作
+2024-05-20 23:16:54 - test_co_operate - 26288 - INFO : 执行用例>> 新增企业
+2024-05-20 23:17:07 - base_page - 26288 - ERROR : 元素定位超时了，是这个('xpath', '//span[contains(text(),"新增.成功")]')
+2024-05-20 23:17:20 - base_util - 4448 - INFO : 开始执行前置操作
+2024-05-20 23:17:23 - test_co_operate - 4448 - INFO : 执行用例>> 新增企业
+2024-05-20 23:19:31 - base_util - 25112 - INFO : 开始执行前置操作
+2024-05-20 23:19:37 - test_co_operate - 25112 - INFO : 执行用例>> 新增企业
+2024-05-20 23:19:40 - test_co_operate - 25112 - INFO : 执行成功
+2024-05-20 23:21:47 - base_util - 11008 - INFO : 开始执行前置操作
+2024-05-20 23:21:50 - test_co_operate - 11008 - INFO : 执行用例>> 新增企业
+2024-05-20 23:21:53 - test_co_operate - 11008 - INFO : 执行成功
+2024-05-20 23:21:53 - test_co_operate - 11008 - INFO : 执行用例>> 修改企业
+2024-05-20 23:21:57 - test_co_operate - 11008 - INFO : 执行成功
+2024-05-20 23:21:57 - test_co_operate - 11008 - INFO : 执行用例>> 删除企业
+2024-05-20 23:22:00 - test_co_operate - 11008 - INFO : 执行成功
+2024-05-20 23:22:17 - base_util - 25184 - INFO : 开始执行前置操作
+2024-05-20 23:22:19 - test_co_operate - 25184 - INFO : 执行用例>> 新增企业
+2024-05-20 23:22:21 - test_co_operate - 25184 - INFO : 执行成功
+2024-05-20 23:22:21 - test_co_operate - 25184 - INFO : 执行用例>> 修改企业
+2024-05-20 23:22:26 - test_co_operate - 25184 - INFO : 执行用例>> 删除企业
+2024-05-20 23:22:29 - test_co_operate - 25184 - INFO : 执行成功
+2024-05-21 06:25:57 - base_util - 14360 - INFO : 开始执行前置操作
+2024-05-21 06:26:00 - test_co_operate - 14360 - INFO : 执行用例>> 新增企业
+2024-05-21 06:26:03 - test_co_operate - 14360 - INFO : 执行成功
+2024-05-21 06:26:03 - test_co_operate - 14360 - INFO : 执行用例>> 修改企业
+2024-05-21 06:26:17 - base_page - 14360 - ERROR : 元素定位超时了，是这个('css selector', '[title="公司"]')
+2024-05-21 06:26:17 - test_co_operate - 14360 - INFO : 执行用例>> 删除企业
+2024-05-21 06:32:22 - base_util - 27280 - INFO : 开始执行前置操作
+2024-05-21 06:32:24 - test_co_operate - 27280 - INFO : 执行用例>> 新增企业
+2024-05-21 06:32:26 - test_co_operate - 27280 - INFO : 断言成功
+2024-05-21 06:32:26 - test_co_operate - 27280 - INFO : 执行用例>> 修改企业
+2024-05-21 06:32:40 - base_page - 27280 - ERROR : 元素定位超时了，是这个('css selector', '[title="公司"]')
+2024-05-21 06:32:40 - test_co_operate - 27280 - INFO : 执行用例>> 删除企业
+2024-05-21 06:37:03 - base_util - 23728 - INFO : 开始执行前置操作
+2024-05-21 06:37:05 - test_co_operate - 23728 - INFO : 执行用例>> 新增企业
+2024-05-21 06:37:06 - base_page - 23728 - ERROR : 元素可能不可交互或未加载出，是这个('css selector', '//dw-select-item[@title="公司" or @title="法人" ]')
+2024-05-21 06:37:06 - base_page - 23728 - ERROR : Message: javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=124.0.6367.209)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70DE61502+60802]
+	(No symbol) [0x00007FF70DDDAC02]
+	(No symbol) [0x00007FF70DC97CE4]
+	(No symbol) [0x00007FF70DC9DE26]
+	(No symbol) [0x00007FF70DCA01DB]
+	(No symbol) [0x00007FF70DCA0280]
+	(No symbol) [0x00007FF70DCE6A11]
+	(No symbol) [0x00007FF70DCE6E1C]
+	(No symbol) [0x00007FF70DD2CE37]
+	(No symbol) [0x00007FF70DD0ABBF]
+	(No symbol) [0x00007FF70DD2A224]
+	(No symbol) [0x00007FF70DD0A923]
+	(No symbol) [0x00007FF70DCD8FEC]
+	(No symbol) [0x00007FF70DCD9C21]
+	GetHandleVerifier [0x00007FF70E16411D+3217821]
+	GetHandleVerifier [0x00007FF70E1A60B7+3488055]
+	GetHandleVerifier [0x00007FF70E19F03F+3459263]
+	GetHandleVerifier [0x00007FF70DF1B846+823494]
+	(No symbol) [0x00007FF70DDE5F9F]
+	(No symbol) [0x00007FF70DDE0EC4]
+	(No symbol) [0x00007FF70DDE1052]
+	(No symbol) [0x00007FF70DDD18A4]
+	BaseThreadInitThunk [0x00007FFE1D1F257D+29]
+	RtlUserThreadStart [0x00007FFE1DEEAA48+40]
+
+2024-05-21 06:37:06 - test_co_operate - 23728 - INFO : 执行用例>> 修改企业
+2024-05-21 06:37:10 - test_co_operate - 23728 - INFO : 执行用例>> 删除企业
+2024-05-21 06:37:36 - base_util - 25332 - INFO : 开始执行前置操作
+2024-05-21 06:37:38 - test_co_operate - 25332 - INFO : 执行用例>> 新增企业
+2024-05-21 06:37:39 - base_page - 25332 - ERROR : 元素可能不可交互或未加载出，是这个('css selector', '//dw-select-item[@title="公司" or @title="法人" ]')
+2024-05-21 06:37:39 - base_page - 25332 - ERROR : Message: javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=124.0.6367.209)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70DE61502+60802]
+	(No symbol) [0x00007FF70DDDAC02]
+	(No symbol) [0x00007FF70DC97CE4]
+	(No symbol) [0x00007FF70DC9DE26]
+	(No symbol) [0x00007FF70DCA01DB]
+	(No symbol) [0x00007FF70DCA0280]
+	(No symbol) [0x00007FF70DCE6A11]
+	(No symbol) [0x00007FF70DCE6E1C]
+	(No symbol) [0x00007FF70DD2CE37]
+	(No symbol) [0x00007FF70DD0ABBF]
+	(No symbol) [0x00007FF70DD2A224]
+	(No symbol) [0x00007FF70DD0A923]
+	(No symbol) [0x00007FF70DCD8FEC]
+	(No symbol) [0x00007FF70DCD9C21]
+	GetHandleVerifier [0x00007FF70E16411D+3217821]
+	GetHandleVerifier [0x00007FF70E1A60B7+3488055]
+	GetHandleVerifier [0x00007FF70E19F03F+3459263]
+	GetHandleVerifier [0x00007FF70DF1B846+823494]
+	(No symbol) [0x00007FF70DDE5F9F]
+	(No symbol) [0x00007FF70DDE0EC4]
+	(No symbol) [0x00007FF70DDE1052]
+	(No symbol) [0x00007FF70DDD18A4]
+	BaseThreadInitThunk [0x00007FFE1D1F257D+29]
+	RtlUserThreadStart [0x00007FFE1DEEAA48+40]
+
+2024-05-21 06:37:39 - test_co_operate - 25332 - INFO : 执行用例>> 修改企业
+2024-05-21 06:37:42 - test_co_operate - 25332 - INFO : 执行用例>> 删除企业
+2024-05-21 06:38:09 - base_util - 22132 - INFO : 开始执行前置操作
+2024-05-21 06:38:11 - test_co_operate - 22132 - INFO : 执行用例>> 新增企业
+2024-05-21 06:38:13 - test_co_operate - 22132 - INFO : 断言成功
+2024-05-21 06:38:13 - test_co_operate - 22132 - INFO : 执行用例>> 修改企业
+2024-05-21 06:38:18 - test_co_operate - 22132 - INFO : 断言成功
+2024-05-21 06:38:18 - test_co_operate - 22132 - INFO : 执行用例>> 删除企业
+2024-05-21 06:38:21 - test_co_operate - 22132 - INFO : 执行成功
+2024-05-21 06:38:56 - base_util - 25100 - INFO : 开始执行前置操作
+2024-05-21 06:38:58 - test_co_operate - 25100 - INFO : 执行用例>> 新增企业
+2024-05-21 06:39:01 - test_co_operate - 25100 - ERROR : '新增.成功' not found in '新增成功' : 断言失败：期望包含 '新增成功'，实际返回 '新增成功'
+2024-05-21 06:39:01 - test_co_operate - 25100 - INFO : 执行用例>> 修改企业
+2024-05-21 06:39:05 - test_co_operate - 25100 - ERROR : '修改.成功' not found in '修改成功' : 断言失败：期望包含 '修改成功'，实际返回 '修改成功'
+2024-05-21 06:39:05 - test_co_operate - 25100 - INFO : 执行用例>> 删除企业
+2024-05-21 06:39:08 - test_co_operate - 25100 - INFO : 执行成功
+2024-05-21 06:41:32 - base_util - 12728 - INFO : 开始执行前置操作
+2024-05-21 06:41:34 - test_co_operate - 12728 - INFO : 执行用例>> 新增企业
+2024-05-21 06:41:37 - test_co_operate - 12728 - INFO : 断言成功
+2024-05-21 06:41:37 - test_co_operate - 12728 - INFO : 执行用例>> 修改企业
+2024-05-21 06:41:41 - test_co_operate - 12728 - INFO : 断言成功
+2024-05-21 06:41:41 - test_co_operate - 12728 - INFO : 执行用例>> 删除企业
+2024-05-21 06:41:43 - test_co_operate - 12728 - INFO : 执行成功
+2024-05-21 06:42:52 - base_util - 5428 - INFO : 开始执行前置操作
+2024-05-21 06:42:54 - test_co_operate - 5428 - INFO : 执行用例>> 新增企业
+2024-05-21 06:42:56 - test_co_operate - 5428 - ERROR : '新增成功' != '新增2成功'
+- 新增成功
++ 新增2成功
+?   +
+ : 断言失败：期望包含 '新增成功'，实际返回 '新增成功'
+2024-05-21 06:42:56 - test_co_operate - 5428 - INFO : 执行用例>> 修改企业
+2024-05-21 06:43:00 - test_co_operate - 5428 - ERROR : '修改成功' != '修改2成功'
+- 修改成功
++ 修改2成功
+?   +
+ : 断言失败：期望包含 '修改成功'，实际返回 '修改成功'
+2024-05-21 06:43:00 - test_co_operate - 5428 - INFO : 执行用例>> 删除企业
+2024-05-21 06:43:03 - test_co_operate - 5428 - INFO : 执行成功
+2024-05-21 06:44:33 - base_util - 23144 - INFO : 开始执行前置操作
+2024-05-21 06:44:35 - test_co_operate - 23144 - INFO : 执行用例>> 新增企业
+2024-05-21 06:44:38 - test_co_operate - 23144 - INFO : 断言成功
+2024-05-21 06:44:38 - test_co_operate - 23144 - INFO : 执行用例>> 修改企业
+2024-05-21 06:44:42 - test_co_operate - 23144 - INFO : 断言成功
+2024-05-21 06:44:42 - test_co_operate - 23144 - INFO : 执行用例>> 删除企业
+2024-05-21 06:44:45 - test_co_operate - 23144 - INFO : 执行成功

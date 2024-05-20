@@ -1,9 +1,5 @@
-import time
-
 from selenium.webdriver.common.by import By
-
 from base.base_page import BasePage
-from page.login_page import LoginPage
 from time import sleep
 
 
@@ -76,7 +72,7 @@ class UserManagePage(BasePage):
     #页面操作
     #新增用户
     def add_user(self, username="hahk456g87", password="5kgA65ddpJ"):
-        time.sleep(5)
+        sleep(5)
         self.click(UserManagePage.user_manage_loc,50)
         self.click(UserManagePage.add_cop_user_loc,20)
         self.click(UserManagePage.add_add_cop_user_loc)
@@ -102,9 +98,9 @@ class UserManagePage(BasePage):
             self.click(UserManagePage.user_manage_loc)
         finally:
             self.click(UserManagePage.modify_user_loc,20)
-            time.sleep(5)
+            sleep(5)
             self.clear(UserManagePage.modify_user_name_loc)
-            time.sleep(2)
+            sleep(2)
             self.send_keys(UserManagePage.modify_user_name_loc,username,20)
             self.clear(UserManagePage.modify_phone_loc)
             self.send_keys(UserManagePage.modify_phone_loc,phone)
@@ -134,6 +130,7 @@ class UserManagePage(BasePage):
 
     #删除用户
     def del_user(self):
+
         try:
             self.waite_ele(UserManagePage.delet_loc)
         except:
@@ -154,18 +151,19 @@ class UserManagePage(BasePage):
     #邀请用户
     def invite_user(self,userid=123444344):
         self.logger.info("执行用例>> 邀请用户")
+
         try:
             self.waite_ele(UserManagePage.delet_loc)
         except:
             self.driver.get(UserManagePage.uaser_manage_url)
             sleep(5)
             self.click(UserManagePage.user_manage_loc)
-        time.sleep(5)
+        sleep(5)
         self.click(UserManagePage.invite_user_loc)
-        time.sleep(1)
+        sleep(1)
         self.click(UserManagePage.invite_user_manage_loc)
         self.send_keys(UserManagePage.input_invite_user_loc,userid)
-        time.sleep(2)
+        sleep(2)
         self.click(UserManagePage.button_send_message_loc)
         sleep(2)
 
@@ -175,6 +173,7 @@ class UserManagePage(BasePage):
 
     #批量邀请用户
     def invite_users(self,filename="account_invite.xlsx"):
+
         try:
             self.waite_ele(UserManagePage.delet_loc,5)
         except:
@@ -182,18 +181,17 @@ class UserManagePage(BasePage):
             self.click(UserManagePage.user_manage_loc)
         self.click(UserManagePage.invite_user_loc)
         self.click(UserManagePage.invite_users_manage_loc)
-        time.sleep(2)
+        sleep(2)
         self.click(UserManagePage.upload_file_loc)
-        time.sleep(2)
+        sleep(2)
         self.upload_file(filename)
         # time.sleep(1)
         self.click(UserManagePage.button_send_file_loc)
 
     def add_user_group(self):
-
-
         self.click(UserManagePage.user_group_loc, 10)
         sleep(3)
+
         try:
             self.waite_ele(UserManagePage.add_user_group_loc)
         except:
@@ -201,9 +199,9 @@ class UserManagePage(BasePage):
             sleep(4)
         self.click(UserManagePage.add_user_group_loc)
         self.send_keys(UserManagePage.input_group_id_loc,self.random())
-        time.sleep(1)
+        sleep(1)
         self.send_keys(UserManagePage.input_group_name_loc,self.random())
-        time.sleep(1)
+        sleep(1)
         self.click(UserManagePage.button_save_loc)
         sleep(3)
         # self.click(UserManagePage.close_add_window_loc)

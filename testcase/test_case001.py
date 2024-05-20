@@ -12,6 +12,6 @@ logger = logging.getLogger('fileAndConsole')
 logger.debug('中文')
 logger.info('英文')
 logger.warning('汉语')
-logger.error('error')
-logger.critical('critical')
+logger.error('日志')
+logger.critical('开始')
 # # 创建一个日志器logger
