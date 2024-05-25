@@ -4,6 +4,7 @@ import chromedriver_autoinstaller
 from selenium import webdriver
 from ddt import ddt, data
 from common.excel_util import ExcelUtil
+from decorators import log_exceptions
 from pages.login_page import LoginPage
 chromedriver_autoinstaller.install()
 from ddt import ddt, data,unpack
@@ -23,7 +24,6 @@ class TestLogin(unittest.TestCase):
         self.driver.get("https://console-paas.digiwincloud.com.cn/login")
         self.logger = logging.getLogger('fileAndConsole')
         self.logger.info("测试登录前置操作")
-
 
 
     @data(*ExcelUtil().read_excel())

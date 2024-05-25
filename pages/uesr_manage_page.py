@@ -13,7 +13,7 @@ class UserManagePage(BasePage):
     user_id_loc = (By.XPATH,'//input[@class="ant-input ng-tns-c73-28 ng-untouched ng-pristine ng-invalid"]')
     user_name_loc = (By.XPATH,'//div[@class="ant-form-item-control-input-content ng-tns-c73-29"]/input')
     password_loc = (By.XPATH,'//input[@class="ant-input ng-tns-c73-30 ng-untouched ng-pristine ng-invalid"]')
-    save_loc = (By.XPATH,'//span[text()="储存"]/parent::*')
+    save_loc = (By.XPATH,'//span[contains(text(),"储存")]')
     add_done = (By.XPATH,'//span[contains(text(),"新增完成")]')
     stop_use = (By.XPATH,'(//a[contains(text(),"停用")])[last()]')
     #编辑操作
@@ -72,14 +72,14 @@ class UserManagePage(BasePage):
     #页面操作
     #新增用户
     def add_user(self, username="hahk456g87", password="5kgA65ddpJ"):
-        sleep(5)
-        self.click(UserManagePage.user_manage_loc,50)
-        self.click(UserManagePage.add_cop_user_loc,20)
+
+        self.click(UserManagePage.user_manage_loc,10)
+        self.click(UserManagePage.add_cop_user_loc,10)
         self.click(UserManagePage.add_add_cop_user_loc)
         self.click(UserManagePage.add_new_loc)
         self.send_keys(UserManagePage.user_id_loc,self.random())
-        self.action_send_keys(UserManagePage.user_name_loc,username,20)
-        self.send_keys(UserManagePage.password_loc,password,20)
+        self.action_send_keys(UserManagePage.user_name_loc,username,10)
+        self.send_keys(UserManagePage.password_loc,password,10)
         self.click(UserManagePage.save_loc)
         self.click(UserManagePage.close_user_loc)
 
@@ -94,18 +94,12 @@ class UserManagePage(BasePage):
             self.waite_ele(UserManagePage.modify_user_loc)
         except:
             self.driver.get(UserManagePage.uaser_manage_url)
-            sleep(5)
-            self.click(UserManagePage.user_manage_loc)
         finally:
-            self.click(UserManagePage.modify_user_loc,20)
-            sleep(5)
-            self.clear(UserManagePage.modify_user_name_loc)
-            sleep(2)
-            self.send_keys(UserManagePage.modify_user_name_loc,username,20)
-            self.clear(UserManagePage.modify_phone_loc)
-            self.send_keys(UserManagePage.modify_phone_loc,phone)
+            self.click(UserManagePage.modify_user_loc,10)
+            self.clear_input(UserManagePage.modify_user_name_loc,username)
+            self.clear_input(UserManagePage.modify_phone_loc,phone)
             self.click(UserManagePage.modify_save_loc)
-            sleep(2)
+
 
     #断言修改成功
     def asert_modify(self):
@@ -118,11 +112,10 @@ class UserManagePage(BasePage):
             self.waite_ele(UserManagePage.stop_use_loc)
         except:
             self.driver.get(UserManagePage.uaser_manage_url)
-            sleep(5)
-            self.click(UserManagePage.user_manage_loc)
-        self.click(UserManagePage.stop_use_loc,10)
-        self.click(UserManagePage.stop_confirm_loc,10)
-        sleep(2)
+        finally:
+            self.click(UserManagePage.stop_use_loc)
+            self.click(UserManagePage.stop_confirm_loc)
+            sleep(2)
 
     #断言停用成功
     def assert_stop(self):
@@ -135,8 +128,6 @@ class UserManagePage(BasePage):
             self.waite_ele(UserManagePage.delet_loc)
         except:
             self.driver.get(UserManagePage.uaser_manage_url)
-            sleep(5)
-            self.click(UserManagePage.user_manage_loc)
         finally:
             sleep(5)
             self.click(UserManagePage.delet_loc, 20)
@@ -150,22 +141,18 @@ class UserManagePage(BasePage):
 
     #邀请用户
     def invite_user(self,userid=123444344):
-        self.logger.info("执行用例>> 邀请用户")
-
         try:
             self.waite_ele(UserManagePage.delet_loc)
         except:
             self.driver.get(UserManagePage.uaser_manage_url)
-            sleep(5)
-            self.click(UserManagePage.user_manage_loc)
-        sleep(5)
-        self.click(UserManagePage.invite_user_loc)
-        sleep(1)
-        self.click(UserManagePage.invite_user_manage_loc)
-        self.send_keys(UserManagePage.input_invite_user_loc,userid)
-        sleep(2)
-        self.click(UserManagePage.button_send_message_loc)
-        sleep(2)
+        finally:
+            self.click(UserManagePage.invite_user_loc)
+            sleep(1)
+            self.click(UserManagePage.invite_user_manage_loc)
+            self.send_keys(UserManagePage.input_invite_user_loc,userid)
+            sleep(2)
+            self.click(UserManagePage.button_send_message_loc)
+            sleep(2)
 
     #断言邀请成功
     def assert_invite(self):
@@ -175,37 +162,37 @@ class UserManagePage(BasePage):
     def invite_users(self,filename="account_invite.xlsx"):
 
         try:
-            self.waite_ele(UserManagePage.delet_loc,5)
+            self.waite_ele(UserManagePage.delet_loc)
         except:
             self.driver.get(UserManagePage.uaser_manage_url)
-            self.click(UserManagePage.user_manage_loc)
-        self.click(UserManagePage.invite_user_loc)
-        self.click(UserManagePage.invite_users_manage_loc)
-        sleep(2)
-        self.click(UserManagePage.upload_file_loc)
-        sleep(2)
-        self.upload_file(filename)
-        # time.sleep(1)
-        self.click(UserManagePage.button_send_file_loc)
+        finally:
+            self.click(UserManagePage.invite_user_loc)
+            self.click(UserManagePage.invite_users_manage_loc)
+            sleep(2)
+            self.click(UserManagePage.upload_file_loc)
+            sleep(2)
+            self.upload_file(filename)
+            # time.sleep(1)
+            self.click(UserManagePage.button_send_file_loc)
 
     def add_user_group(self):
-        self.click(UserManagePage.user_group_loc, 10)
-        sleep(3)
+        self.click(UserManagePage.user_group_loc)
 
         try:
             self.waite_ele(UserManagePage.add_user_group_loc)
         except:
             self.driver.get(UserManagePage.user_group_url)
-            sleep(4)
-        self.click(UserManagePage.add_user_group_loc)
-        self.send_keys(UserManagePage.input_group_id_loc,self.random())
-        sleep(1)
-        self.send_keys(UserManagePage.input_group_name_loc,self.random())
-        sleep(1)
-        self.click(UserManagePage.button_save_loc)
-        sleep(3)
-        # self.click(UserManagePage.close_add_window_loc)
-        # sleep(2)
+        finally:
+            sleep(5)
+            self.click(UserManagePage.add_user_group_loc)
+            self.send_keys(UserManagePage.input_group_id_loc,self.random())
+            sleep(1)
+            self.send_keys(UserManagePage.input_group_name_loc,self.random())
+            sleep(1)
+            self.click(UserManagePage.button_save_loc)
+            sleep(3)
+            # self.click(UserManagePage.close_add_window_loc)
+            # sleep(2)
 
     def assert_group_save(self):
         return self.get_value(UserManagePage.assert_save_loc)
@@ -216,14 +203,14 @@ class UserManagePage(BasePage):
             self.waite_ele(UserManagePage.user_group_loc)
         except:
             self.driver.get(UserManagePage.user_group_url)
-            sleep(5)
-        self.click(UserManagePage.modifu_group_loc)
-        self.clear(UserManagePage.modify_group_name_loc)
-        self.send_keys(UserManagePage.modify_group_name_loc,group)
-        self.click(UserManagePage.modify_kenel_loc)
-        self.click(UserManagePage.modify_dep_loc)
-        self.click(UserManagePage.modify_group_save_loc)
-        sleep(2)
+        finally:
+            self.click(UserManagePage.modifu_group_loc)
+            self.clear(UserManagePage.modify_group_name_loc)
+            self.send_keys(UserManagePage.modify_group_name_loc,group)
+            self.click(UserManagePage.modify_kenel_loc)
+            self.click(UserManagePage.modify_dep_loc)
+            self.click(UserManagePage.modify_group_save_loc)
+            sleep(2)
 
     def assert_modify_group(self):
         return self.get_value(UserManagePage.assert_modify_group_loc)
@@ -235,10 +222,10 @@ class UserManagePage(BasePage):
             self.waite_ele(UserManagePage.user_group_loc)
         except:
             self.driver.get(UserManagePage.user_group_url)
-            sleep(5)
-        self.click(UserManagePage.delete_user_group_loc)
-        sleep(3)
-        self.click(UserManagePage.delete_confirm_loc)
+        finally:
+            self.click(UserManagePage.delete_user_group_loc)
+            sleep(3)
+            self.click(UserManagePage.delete_confirm_loc)
 
     def assert_del_user(self):
         return self.get_value(UserManagePage.assert_delete_user_loc)

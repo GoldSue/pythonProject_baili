@@ -1,6 +1,6 @@
 import os
 import random
-import time
+from time import sleep
 
 import pyautogui
 from selenium import webdriver
@@ -55,6 +55,13 @@ class BasePage:
         element = self.loctor(loc,timeout)
         element.send_keys(value)
 
+    def clear_input(self,loc,value,timeout=5):
+        sleep(1)
+        self.clear(loc)
+        sleep(1)
+        element = self.loctor(loc, timeout)
+        element.send_keys(value)
+
     def click(self,loc,timeout=10):
         element = self.loctor(loc,timeout)
         element.click()
@@ -74,7 +81,8 @@ class BasePage:
         使用Keys库类模拟键盘操作，CONTROL+a全选并删除
         :param loc: 元素定位，文本框
         :return:
-        """
+        # """
+        # self.loctor(loc).clear()
         ele = self.loctor(loc)
         ele.send_keys(Keys.CONTROL + "a")
         ele.send_keys(Keys.DELETE)
@@ -144,13 +152,13 @@ class BasePage:
         :return:
         """
         pyautogui.write(self.get_file_path(filename))
-        time.sleep(1)
+        sleep(1)
         pyautogui.press('enter')
         # pyautogui.press('enter')
 
     def refresh(self):
         pyautogui.press('f5')
-        time.sleep(3)
+        sleep(3)
 
     def get_screenshot(self,picture):
         self.driver.save_screenshot(f"D:\\pythonProject_baili\\screenshot\\{picture}.png")
@@ -158,9 +166,60 @@ class BasePage:
     def refresh_url(self,url):
         self.driver.get(url)
 
-    def clear_input(self,loc,text):
-        self.clear(loc)
-        self.send_keys(loc,text)
+    def scroll_into_view(self, loc):
+        """
+        滚动到元素可见
+        :param loc:
+        :return:
+        """
+        element = self.loctor(loc)
+        self.driver.execute_script("arguments[0].scrollIntoView({ behavior: 'smooth', block: 'center' });", element)
+
+
+    def get_title(self):
+        """
+        获取页面标题
+        :return:
+        """
+        return self.driver.execute_script("return document.title;")
+
+    def lose_point(self, loc=None):
+        if loc:
+            element = self.loctor(loc)
+        else:
+            element = self.driver.find_element(By.TAG_NAME, 'body')
+        self.driver.execute_script("arguments[0].blur();", element)
+
+    def remove_element_attribute(self, loc, attribute):
+        """
+        移除元素属性
+        :param loc:
+        :param attribute:
+        :return:
+        """
+        element = self.loctor(loc)
+        self.driver.execute_script("arguments[0].removeAttribute(arguments[1]);", element, attribute)
+
+    def highlight_element(self, loc):
+        """
+        元素高亮
+        :param loc: 元素定位
+        :return:
+        """
+        element = self.loctor(loc)
+        self.driver.execute_script("arguments[0].style.border='3px solid red'", element)
+
+    def click_element_by_js(self, loc):
+        """
+        execute_script方法点击元素
+        :param loc: 元素定位
+        :return:
+        """
+        element = self.loctor(loc)
+        self.driver.execute_script("arguments[0].click();", element)
+
+
+
 
 
 

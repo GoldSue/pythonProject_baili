@@ -33,25 +33,28 @@ class CoOperation(BasePage):
     delete_confirm_loc = (By.XPATH,'//span[text()=" 确定 "]')
 
     #2.员工管理
+    #新增员工
     employee_management_loc = (By.XPATH,'(//div[@class="ant-tabs-tab-btn"])[2]')
-    add_employee_loc = (By.XPATH,'//span[text()="新增员工"]')
+    add_employee_loc = (By.XPATH,'//span[contains(text(),"新增员工")]')
     employee_id_loc = (By.CSS_SELECTOR,'[placeholder="请输入员工工号"]')
     employee_name_loc = (By.CSS_SELECTOR,'[placeholder="请输入员工姓名"]')
-    employee_save_loc = (By.CLASS_NAME,'ant-btn ant-btn-primary')
+    employee_save_loc = (By.CSS_SELECTOR,'[class="ant-btn ant-btn-primary"]')
     confirme_save_loc = (By.XPATH,'//span[text()=" 确定保存 "]')
     assert_add_employee_loc = (By.XPATH,'//span[contains(text(),"新增成功")]')
     #修改员工
-    modyfi_employee_loc = (By.XPATH,'(//a[text()="停用"])[1]')
+    modyfi_employee_loc = (By.XPATH,'(//a[text()="修改"])[last()]')
+    modify_employ_cinfirm = (By.XPATH,'//span[contains(text(),"确定保存")]')
     assert_modify_employee_loc = (By.XPATH,'//span[contains(text(),"修改成功")]')
+
     #停用员工
     stop_employee_loc = (By.XPATH,'(//a[text()="停用"])[1]')
     assert_stop_employee_loc = (By.XPATH,'//span[contains(text(),"停用成功")]')
     #删除员工
     delete_employee_loc = (By.XPATH,'(//a[text()="删除"])[1]')
-    delete_employee_confirm_loc = (By.CSS_SELECTOR,'[class="ant-btn ng-tns-c34-241 ant-btn-primary ng-star-inserted"]')
+    delete_employee_confirm_loc = (By.XPATH,'//button/span[contains(text(),"确定")]')
     assert_delete_employee_loc = (By.XPATH,'//span[contains(text(),"删除成功")]')
     #导入员工
-    import_employee_loc = (By.XPATH,'//span[text()="导入"]')
+    import_employee_loc = (By.XPATH,'(//a[@class="ng-star-inserted"])[3]')
     download_templat_loc = (By.XPATH,'//span[text()="下载模版 "]')
     upload_employee_loc = (By.XPATH,'//span[text()="上传档案"]')
     import_button_loc = (By.XPATH,'//span[text()="导入员工"]')
@@ -95,6 +98,7 @@ class CoOperation(BasePage):
     #页面操作
     def add_co(self,name = "123"):
         self.click(CoOperation.co_operat_loc)
+        sleep(2)
         self.click(CoOperation.add_co_anaother_loc)
         self.send_keys(CoOperation.co_id_loc,self.random())
         self.send_keys(CoOperation.co_name_loc,name)
@@ -120,6 +124,7 @@ class CoOperation(BasePage):
             self.click(CoOperation.select_opt2_loc)
             self.click(CoOperation.add_co_save)
 
+
     def assert_modify_co(self):
         return self.get_value(CoOperation.assert_modiye_co_loc)
 
@@ -132,6 +137,50 @@ class CoOperation(BasePage):
             sleep(2)
             self.click(CoOperation.delete_co_loc)
             self.click(CoOperation.delete_confirm_loc)
+
+    def add_employee(self):
+        self.click(CoOperation.employee_management_loc)
+        sleep(2)
+        self.scroll_into_view(CoOperation.add_employee_loc)
+        sleep(2)
+        self.click(CoOperation.add_employee_loc)
+        # self.scroll_into_view(CoOperation.employee_id_loc)
+        self.send_keys(CoOperation.employee_id_loc,self.random())
+        self.send_keys(CoOperation.employee_name_loc,self.random())
+        # self.scroll_into_view(CoOperation.employee_save_loc)
+        self.click(CoOperation.employee_save_loc)
+        self.click(CoOperation.confirme_save_loc)
+
+    def assert_add_employee(self):
+        return self.get_value(CoOperation.assert_add_employee_loc)
+
+    def midify_employee(self):
+        self.click(CoOperation.modyfi_employee_loc)
+        self.clear(CoOperation.employee_name_loc)
+        self.clear_input(CoOperation.employee_name_loc,self.random())
+        sleep(2)
+        self.click(CoOperation.employee_save_loc)
+        self.click(CoOperation.modify_employ_cinfirm)
+    def test_lacor(self):
+        return self.loctor(CoOperation.assert_modify_employee_loc)
+    def assert_modify_employee(self):
+        return self.get_value(CoOperation.assert_modify_employee_loc)
+
+
+    def stop_employee(self):
+        self.click(CoOperation.stop_employee_loc)
+
+    def assert_stop_employee(self):
+        return self.get_value(CoOperation.assert_stop_employee_loc)
+
+
+    def delete_employee(self):
+        self.click(CoOperation.delete_employee_loc)
+        self.click(CoOperation.delete_employee_confirm_loc)
+
+    def assert_delete_employee(self):
+        return self.get_value(CoOperation.assert_delete_employee_loc)
+
 
 
 
