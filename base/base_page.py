@@ -146,15 +146,21 @@ class BasePage:
         return filePath
 
     def upload_file(self,filename):
-        """
-        上传文件，调用获取文件路径的方法
-        :param filename: 需要上传的文件
-        :return:
-        """
-        pyautogui.write(self.get_file_path(filename))
-        sleep(1)
-        pyautogui.press('enter')
-        # pyautogui.press('enter')
+
+        try:
+            # self.logger.info("开始上传文件: %s", filename)
+            file_path = self.get_file_path(filename)
+            # self.logger.info("文件路径: %s", file_path)
+            # self.logger.info("输入文件路径到系统文件选择窗口")
+            pyautogui.typewrite(file_path, interval=0.05)
+            # self.logger.info("文件路径已输入")
+            sleep(1)
+            # self.logger.info("按下回车键确认上传")
+            pyautogui.press('enter',2)
+            # self.logger.info("文件上传完成")
+        except Exception as e:
+            self.logger.exception("文件上传过程中发生错误: %s", str(e))
+        # 确保文件上传完成，必要时可以增加一些等待时间
 
     def refresh(self):
         pyautogui.press('f5')
@@ -190,7 +196,7 @@ class BasePage:
             element = self.driver.find_element(By.TAG_NAME, 'body')
         self.driver.execute_script("arguments[0].blur();", element)
 
-    def remove_element_attribute(self, loc, attribute):
+    def remove_element_attribute(self, loc, attribute="readonly"):
         """
         移除元素属性
         :param loc:

@@ -30,7 +30,7 @@ class CoOperation(BasePage):
     assert_modiye_co_loc = (By.XPATH,'//span[contains(text(),"修改成功")]')
     #删除公司
     delete_co_loc = (By.XPATH,'(//a[text()=" 删除 "])[last()]')
-    delete_confirm_loc = (By.XPATH,'//span[text()=" 确定 "]')
+    delete_confirm_loc = (By.XPATH,'//button/span[contains(text(),"确定")]')
 
     #2.员工管理
     #新增员工
@@ -39,7 +39,7 @@ class CoOperation(BasePage):
     employee_id_loc = (By.CSS_SELECTOR,'[placeholder="请输入员工工号"]')
     employee_name_loc = (By.CSS_SELECTOR,'[placeholder="请输入员工姓名"]')
     employee_save_loc = (By.CSS_SELECTOR,'[class="ant-btn ant-btn-primary"]')
-    confirme_save_loc = (By.XPATH,'//span[text()=" 确定保存 "]')
+    confirme_save_loc = (By.XPATH,'//span[contains(text(),"确定保存")]')
     assert_add_employee_loc = (By.XPATH,'//span[contains(text(),"新增成功")]')
     #修改员工
     modyfi_employee_loc = (By.XPATH,'(//a[text()="修改"])[last()]')
@@ -54,41 +54,45 @@ class CoOperation(BasePage):
     delete_employee_confirm_loc = (By.XPATH,'//button/span[contains(text(),"确定")]')
     assert_delete_employee_loc = (By.XPATH,'//span[contains(text(),"删除成功")]')
     #导入员工
-    import_employee_loc = (By.XPATH,'(//a[@class="ng-star-inserted"])[3]')
+    export_employee_loc = (By.XPATH,'//span[text()="导入"]')
     download_templat_loc = (By.XPATH,'//span[text()="下载模版 "]')
-    upload_employee_loc = (By.XPATH,'//span[text()="上传档案"]')
-    import_button_loc = (By.XPATH,'//span[text()="导入员工"]')
+    upload_employee_loc = (By.XPATH,'//span[contains(text(),"上传档案")]')
+    upload_script_loc = (By.CSS_SELECTOR,'[placeholder="请选择上传档案"]')
+    export_button_loc = (By.XPATH,'//span[contains(text(),"导入员工")]')
     assert_import_ok_loc = (By.XPATH,'//span[contains(text(),"导入成功")]')
     #导出员工
-    export_employee_loc =(By.XPATH,'//span[text()="导出"]')
-    export_list_loc =(By.XPATH,'//span[text()="导出清单"]')
+    import_employee_loc =(By.XPATH,'//span[text()="导出"]')
+    import_list_loc =(By.XPATH,'//span[text()="导出清单"]')
     click_none_loc = (By.TAG_NAME,'body')
     #3.企业组织
     co_organize_loc = (By.XPATH,'(//div[@class="ant-tabs-tab-btn"])[3]')
     add_dep_loc = (By.XPATH,'//span[text()="新增部门"]')
-    co_an_name_loc = (By.CSS_SELECTOR,'[class="ant-select-selection-search-input ng-pristine ng-valid ng-touched"]')
+    co_an_name_loc = (By.XPATH,'(//input[@autocomplete="off" and @style="opacity: 0;"])[2]')
     co_name_first_loc = (By.XPATH,'(//div[@class="ant-select-item-option-content"])[1]')
     dept_id_loc = (By.CSS_SELECTOR,'[placeholder="请输入部门 ID"]')
     dept_name_loc = (By.CSS_SELECTOR,'[placeholder="请输入部门名称"]')
-    chioce_dept_director_loc = (By.CSS_SELECTOR,'[placeholder="请选择部门主管"]')
-    chioce_director_loc = (By.XPATH,'(//input[@class="ant-checkbox-input ng-untouched ng-pristine ng-valid"])[1]')
-    chioce_sure_loc = (By.XPATH,'//span[text()="确定"]')
-    add_dept_save_loc = (By.XPATH,'//span[text()=" 储存 "]')
-    dept_decide_level_loc = (By.CSS_SELECTOR,'[title="4321(431)"]')
-    chioce_dept_level_loc = (By.CSS_SELECTOR,'[class="ant-select-item-option-content"]')
-    assert_add_dept_loc = (By.XPATH,'//span[contains(text(),"新增成功")]')
-
+    choice_dept_director_loc = (By.CSS_SELECTOR,'[placeholder="请选择部门主管"]')
+    choice_director_loc = (By.XPATH,'(//input[@class="ant-checkbox-input ng-untouched ng-pristine ng-valid"])[1]')
+    choice_sure_loc = (By.XPATH,'//span[text()="确定"]')
+    dept_decide_level_loc = (By.CSS_SELECTOR,'(//input[@class="ant-select-selection-search-input ng-pristine ng-valid ng-touched"])[2]')
+    choice_dept_level_loc = (By.CSS_SELECTOR,'[class="ant-select-item-option-content"]')
+    add_dept_save_loc = (By.XPATH, '//span[text()=" 储存 "]')
+    assert_add_dept_loc = (By.XPATH, '//span[contains(text(),"新增成功")]')
     #4.场域管理
     #新增场域
+    sleep(2)
     site_manage_loc =(By.XPATH,'(//div[@class="ant-tabs-tab-btn"])[4]')
     add_site_loc = (By.XPATH,'(//div[@class="btn-group"]/a)[1]')
     site_nature_loc = (By.XPATH,'(//dw-select-search[@class="ant-select-selection-search ng-star-inserted"])[2]')
+    chice_dep_loc = (By.XPATH,'(//div[@class="ant-select-item-option-content"])[1]')
     site_id_loc = (By.CSS_SELECTOR,'[placeholder="请输入ID"]')
     site_name_loc = (By.CSS_SELECTOR,'[placeholder="请输入场域名称"]')
-    site_save_loc = (By.XPATH,'//span[text()=" 储存 "]')
+    site_save_loc = (By.XPATH,'//span[contains(text(),"储存")]')
     assert_add_site = (By.XPATH,'//span[contains(text(),"新增成功")]')
     #修改场域
-    modify_site_loc = (By.XPATH,'(//a[text()="修改"])[1]')
+    modify_site_loc = (By.XPATH,'(//a[contains(text(),"修改")])[1]')
+    site_modify_loc = (By.CSS_SELECTOR, '[title="采购域"]')
+    choice_modify_dep_loc = (By.XPATH,'(//div[@class="ant-select-item-option-content"])[2]')
     assert_modify_site_loc = (By.XPATH,'//span[contains(text(),"修改成功")]')
     #s删除场域
     delete_site_loc = (By.XPATH,'(//a[text()="删除"])[1]')
@@ -144,11 +148,10 @@ class CoOperation(BasePage):
         self.scroll_into_view(CoOperation.add_employee_loc)
         sleep(2)
         self.click(CoOperation.add_employee_loc)
-        # self.scroll_into_view(CoOperation.employee_id_loc)
         self.send_keys(CoOperation.employee_id_loc,self.random())
         self.send_keys(CoOperation.employee_name_loc,self.random())
-        # self.scroll_into_view(CoOperation.employee_save_loc)
         self.click(CoOperation.employee_save_loc)
+        sleep(1)
         self.click(CoOperation.confirme_save_loc)
 
     def assert_add_employee(self):
@@ -158,14 +161,14 @@ class CoOperation(BasePage):
         self.click(CoOperation.modyfi_employee_loc)
         self.clear(CoOperation.employee_name_loc)
         self.clear_input(CoOperation.employee_name_loc,self.random())
-        sleep(2)
         self.click(CoOperation.employee_save_loc)
+        sleep(1)
         self.click(CoOperation.modify_employ_cinfirm)
+        print("1234567890987654321")
     def test_lacor(self):
         return self.loctor(CoOperation.assert_modify_employee_loc)
     def assert_modify_employee(self):
         return self.get_value(CoOperation.assert_modify_employee_loc)
-
 
     def stop_employee(self):
         self.click(CoOperation.stop_employee_loc)
@@ -173,13 +176,100 @@ class CoOperation(BasePage):
     def assert_stop_employee(self):
         return self.get_value(CoOperation.assert_stop_employee_loc)
 
-
     def delete_employee(self):
         self.click(CoOperation.delete_employee_loc)
+        sleep(1)
         self.click(CoOperation.delete_employee_confirm_loc)
 
     def assert_delete_employee(self):
         return self.get_value(CoOperation.assert_delete_employee_loc)
+
+    def export_employee(self,filename="emp_export.xlsx"):
+        sleep(2)
+        self.scroll_into_view(CoOperation.export_employee_loc)
+        sleep(2)
+        self.click(CoOperation.export_employee_loc)
+        self.click(CoOperation.download_templat_loc)
+        sleep(2)
+        self.click(CoOperation.upload_employee_loc)
+        sleep(2)
+        self.upload_file(filename)
+        sleep(2)
+        self.click(CoOperation.export_button_loc)
+
+    def assert_export(self):
+        return self.get_value(CoOperation.assert_import_ok_loc)
+
+    def import_employee(self):
+        sleep(2)
+        self.scroll_into_view(CoOperation.import_employee_loc)
+        sleep(2)
+        self.click(CoOperation.import_employee_loc)
+        self.click(CoOperation.import_list_loc)
+
+    def add_dep(self):
+        sleep(1)
+        self.click(CoOperation.co_organize_loc)
+        sleep(1)
+        self.click(CoOperation.add_dep_loc)
+        # sleep(5)
+        self.remove_element_attribute(CoOperation.co_an_name_loc)
+        # sleep(5)
+        sleep(2)
+        self.send_keys(CoOperation.co_an_name_loc,"4321(4321)")
+        # self.click(CoOperation.co_name_first_loc)
+        self.send_keys(CoOperation.dept_id_loc,self.random())
+        self.send_keys(CoOperation.dept_name_loc,self.random())
+        self.click(CoOperation.choice_dept_director_loc)
+        self.click(CoOperation.choice_director_loc)
+        sleep(2)
+        self.click(CoOperation.choice_sure_loc)
+        self.click(CoOperation.dept_decide_level_loc)
+        sleep(2)
+        self.click(CoOperation.choice_dept_level_loc)
+        self.click(CoOperation.add_dept_save_loc)
+
+    def assert_add_dep(self):
+        return self.get_value(CoOperation.assert_add_dept_loc)
+
+    def add_sit(self):
+        self.click(CoOperation.site_manage_loc)
+        # sleep(1)
+        # self.scroll_into_view(CoOperation.add_site_loc)
+        sleep(1)
+        self.click(CoOperation.add_site_loc)
+        self.click(CoOperation.site_nature_loc)
+        self.click(CoOperation.chice_dep_loc)
+        self.send_keys(CoOperation.site_id_loc,self.random())
+        self.send_keys(CoOperation.site_name_loc,self.random())
+        self.click(CoOperation.site_save_loc)
+
+    def assert_site(self):
+        return self.get_value(CoOperation.assert_add_site)
+
+    def modify_site(self):
+        sleep(2)
+        self.click(CoOperation.modify_site_loc)
+        self.click(CoOperation.site_modify_loc)
+        self.click(CoOperation.choice_modify_dep_loc)
+        sleep(1)
+        self.clear_input(CoOperation.site_id_loc,self.random())
+        sleep(1)
+        self.clear_input(CoOperation.site_name_loc,self.random())
+        self.click(CoOperation.site_save_loc)
+
+    def assert_modify(self):
+        return self.get_value(CoOperation.assert_modify_site_loc)
+
+    def delete_site(self):
+        sleep(1)
+        self.click(CoOperation.delete_site_loc)
+        self.click(CoOperation.delete_site_confirm_loc)
+
+    def assert_delet(self):
+        return self.get_value(CoOperation.assert_delete_site_loc)
+
+
 
 
 

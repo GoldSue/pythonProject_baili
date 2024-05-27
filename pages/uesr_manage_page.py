@@ -115,7 +115,6 @@ class UserManagePage(BasePage):
         finally:
             self.click(UserManagePage.stop_use_loc)
             self.click(UserManagePage.stop_confirm_loc)
-            sleep(2)
 
     #断言停用成功
     def assert_stop(self):
@@ -129,11 +128,10 @@ class UserManagePage(BasePage):
         except:
             self.driver.get(UserManagePage.uaser_manage_url)
         finally:
-            sleep(5)
-            self.click(UserManagePage.delet_loc, 20)
-            sleep(3)
-            self.click(UserManagePage.delet_confirm_loc, 20)
             sleep(2)
+            self.click(UserManagePage.delet_loc, 20)
+            sleep(2)
+            self.click(UserManagePage.delet_confirm_loc, 20)
 
     #断言删除成功
     def assert_del(self):
@@ -183,16 +181,14 @@ class UserManagePage(BasePage):
         except:
             self.driver.get(UserManagePage.user_group_url)
         finally:
-            sleep(5)
+            sleep(3)
             self.click(UserManagePage.add_user_group_loc)
             self.send_keys(UserManagePage.input_group_id_loc,self.random())
             sleep(1)
             self.send_keys(UserManagePage.input_group_name_loc,self.random())
             sleep(1)
             self.click(UserManagePage.button_save_loc)
-            sleep(3)
-            # self.click(UserManagePage.close_add_window_loc)
-            # sleep(2)
+            sleep(2)
 
     def assert_group_save(self):
         return self.get_value(UserManagePage.assert_save_loc)
@@ -211,7 +207,6 @@ class UserManagePage(BasePage):
             self.click(UserManagePage.modify_dep_loc)
             self.click(UserManagePage.modify_group_save_loc)
             sleep(2)
-
     def assert_modify_group(self):
         return self.get_value(UserManagePage.assert_modify_group_loc)
 
@@ -224,7 +219,7 @@ class UserManagePage(BasePage):
             self.driver.get(UserManagePage.user_group_url)
         finally:
             self.click(UserManagePage.delete_user_group_loc)
-            sleep(3)
+            sleep(2)
             self.click(UserManagePage.delete_confirm_loc)
 
     def assert_del_user(self):
