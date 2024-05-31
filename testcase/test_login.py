@@ -25,14 +25,13 @@ class TestLogin(unittest.TestCase):
         self.logger = logging.getLogger('fileAndConsole')
         self.logger.info("测试登录前置操作")
 
-
     @data(*ExcelUtil().read_excel())
     @unpack
     def test_login(self,index,username,password):
         lp = LoginPage(self.driver)
         lp.login(username, password)
-
         self.logger.info(f"用户名:{username} 密码:{password}")
+
         if index == 1:
             self.assertEqual(lp.assert_right(), "我的首页")
         elif index == 2:

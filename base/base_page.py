@@ -169,7 +169,7 @@ class BasePage:
     def get_screenshot(self,picture):
         self.driver.save_screenshot(f"D:\\pythonProject_baili\\screenshot\\{picture}.png")
 
-    def refresh_url(self,url):
+    def reget_url(self,url):
         self.driver.get(url)
 
     def scroll_into_view(self, loc):

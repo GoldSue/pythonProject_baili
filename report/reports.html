@@ -200,9 +200,9 @@
         
     <div class='page-header'>
         <h1>自动化测试报告</h1>
-    <p class='attribute'><strong>开始时间:</strong> 2024-05-27 22:52:14</p>
-<p class='attribute'><strong>运行时长:</strong> 0:02:32.173143</p>
-<p class='attribute'><strong>状态:</strong> 通过 24</p>
+    <p class='attribute'><strong>开始时间:</strong> 2024-05-31 20:01:53</p>
+<p class='attribute'><strong>运行时长:</strong> 0:03:56.800868</p>
+<p class='attribute'><strong>状态:</strong> 通过 21 错误 3</p>
 
     </div>
     <div style="float: left;width:50%;"><p class='description'>报告详情</p></div>
@@ -338,12 +338,12 @@
     <td colspan='5' align='center'>通过</td>
 </tr>
 
-    <tr class='passClass'>
+    <tr class='errorClass'>
         <td>test_user_manager.TestUserManage</td>
         <td>9</td>
-        <td>9</td>
+        <td>6</td>
         <td>0</td>
-        <td>0</td>
+        <td>3</td>
         <td><a href="javascript:showClassDetail('c3',9)">详情</a></td>
     </tr>
 
@@ -377,27 +377,133 @@
     <td colspan='5' align='center'>通过</td>
 </tr>
 
-<tr id='pt3.7' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_007_add_user_group</div></td>
-    <td colspan='5' align='center'>通过</td>
+<tr id='ft3.7' class='none'>
+    <td class='errorCase'><div class='testcase'>test_007_add_user_group</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.7')" >
+        错误</a>
+
+    <div id='div_ft3.7' class="popup_window">
+        <pre>ft3.7: Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_user_manager.py", line 48, in test_007_add_user_group
+    um.add_user_group()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\uesr_manage_page.py", line 177, in add_user_group
+    self.click(UserManagePage.user_group_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element &lt;div role="tab" dwtabnavitem="" cdkmonitorelementfocus="" class="ant-tabs-tab-btn" tabindex="-1" aria-disabled="false" aria-selected="false" aria-controls="dw-tabs-2-tab-1"&gt;...&lt;/div&gt; is not clickable at point (212, 75). Other element would receive the click: &lt;div class="ant-drawer-mask ng-star-inserted"&gt;&lt;/div&gt;
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00F5B8E3+45827]
+	(No symbol) [0x00EEDCC4]
+	(No symbol) [0x00DE150F]
+	(No symbol) [0x00E28052]
+	(No symbol) [0x00E263D8]
+	(No symbol) [0x00E2425B]
+	(No symbol) [0x00E23823]
+	(No symbol) [0x00E185EF]
+	(No symbol) [0x00E42DFC]
+	(No symbol) [0x00E18075]
+	(No symbol) [0x00E43094]
+	(No symbol) [0x00E5C034]
+	(No symbol) [0x00E42B96]
+	(No symbol) [0x00E16998]
+	(No symbol) [0x00E1751D]
+	GetHandleVerifier [0x01214513+2899763]
+	GetHandleVerifier [0x0126793D+3240797]
+	GetHandleVerifier [0x00FE13B4+593364]
+	GetHandleVerifier [0x00FE82DC+621820]
+	(No symbol) [0x00EF70A4]
+	(No symbol) [0x00EF37A8]
+	(No symbol) [0x00EF3947]
+	(No symbol) [0x00EE59FE]
+	BaseThreadInitThunk [0x758A7BA9+25]
+	RtlInitializeExceptionChain [0x7707BE3B+107]
+	RtlClearBits [0x7707BDBF+191]
+
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
-<tr id='pt3.8' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_008_modify_group</div></td>
-    <td colspan='5' align='center'>通过</td>
+<tr id='ft3.8' class='none'>
+    <td class='errorCase'><div class='testcase'>test_008_modify_group</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.8')" >
+        错误</a>
+
+    <div id='div_ft3.8' class="popup_window">
+        <pre>ft3.8: Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_user_manager.py", line 54, in test_008_modify_group
+    um.modify_group()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\uesr_manage_page.py", line 203, in modify_group
+    self.click(UserManagePage.modifu_group_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
-<tr id='pt3.9' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_009_delete_group</div></td>
-    <td colspan='5' align='center'>通过</td>
+<tr id='ft3.9' class='none'>
+    <td class='errorCase'><div class='testcase'>test_009_delete_group</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.9')" >
+        错误</a>
+
+    <div id='div_ft3.9' class="popup_window">
+        <pre>ft3.9: Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_user_manager.py", line 60, in test_009_delete_group
+    um.delete_user_group()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\uesr_manage_page.py", line 221, in delete_user_group
+    self.click(UserManagePage.delete_user_group_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
         <tr id='total_row'>
             <td>总计</td>
             <td>24</td>
-            <td>24</td>
+            <td>21</td>
             <td>0</td>
-            <td>0</td>
+            <td>3</td>
             <td>&nbsp;</td>
         </tr>
     </table>
@@ -431,9 +537,9 @@
                     radius : '60%',
                     center: ['50%', '60%'],
                     data:[
-                        {value:24, name:'通过'},
+                        {value:21, name:'通过'},
                         {value:0, name:'失败'},
-                        {value:0, name:'错误'}
+                        {value:3, name:'错误'}
                     ],
                     itemStyle: {
                         emphasis: {

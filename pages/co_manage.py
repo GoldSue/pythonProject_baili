@@ -6,6 +6,7 @@
 from selenium.webdriver.common.by import By
 from time import sleep
 from base.base_page import BasePage
+from decorators import ensure_page_loaded
 
 
 class CoOperation(BasePage):
@@ -100,6 +101,7 @@ class CoOperation(BasePage):
     assert_delete_site_loc = (By.XPATH,'//span[text()="删除成功"]')
 
     #页面操作
+
     def add_co(self,name = "123"):
         self.click(CoOperation.co_operat_loc)
         sleep(2)
@@ -113,12 +115,11 @@ class CoOperation(BasePage):
     def assert_add_co(self):
         return self.get_value(CoOperation.assert_add_co_loc)
 
-
     def modify_co(self):
         try:
-            self.waite_ele(CoOperation.modify_co_loc,5)
+            self.waite_ele(CoOperation.modify_co_loc)
         except:
-            self.refresh_url(CoOperation.operate_url)
+            self.reget_url("https://console-paas.digiwincloud.com.cn/mang-user")
         finally:
             sleep(2)
             self.click(CoOperation.modify_co_loc)
@@ -128,7 +129,6 @@ class CoOperation(BasePage):
             self.click(CoOperation.select_opt2_loc)
             self.click(CoOperation.add_co_save)
 
-
     def assert_modify_co(self):
         return self.get_value(CoOperation.assert_modiye_co_loc)
 
@@ -136,7 +136,7 @@ class CoOperation(BasePage):
         try:
             self.waite_ele(CoOperation.delete_co_loc)
         except:
-            self.refresh_url(CoOperation.operate_url)
+            self.reget_url(CoOperation.operate_url)
         finally:
             sleep(2)
             self.click(CoOperation.delete_co_loc)
@@ -165,8 +165,10 @@ class CoOperation(BasePage):
         sleep(1)
         self.click(CoOperation.modify_employ_cinfirm)
         print("1234567890987654321")
+
     def test_lacor(self):
         return self.loctor(CoOperation.assert_modify_employee_loc)
+
     def assert_modify_employee(self):
         return self.get_value(CoOperation.assert_modify_employee_loc)
 

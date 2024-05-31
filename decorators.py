@@ -4,10 +4,12 @@
 # @Author  : libaojin
 # @File    : decorators.py
 
-import logging
-import logging
+
 import logging.config
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
 from functools import wraps
+from selenium.webdriver.support.wait import WebDriverWait
 
 # 加载日志配置文件
 logging.config.fileConfig('logging.conf')
@@ -33,3 +35,34 @@ def log_exceptions(func):
             raise
 
     return wrapper
+
+
+def ensure_page_loaded(element_locator, start_url, timeout=5):
+    """
+    装饰器：确保页面加载，等待指定元素出现。如果元素未出现，则导航到起始页面。
+    :param element_locator: 定位元素的定位器
+    :param start_url: 起始页面的URL
+    :param timeout: 等待时间（默认5秒）
+    """
+    def decorator(func):
+        @wraps(func)
+        def wrapper(page, *args, **kwargs):
+            try:
+                WebDriverWait(page.driver, timeout).until(
+                    EC.presence_of_element_located(element_locator)
+                )
+                print(f"Element {element_locator} found on the page.")
+            except TimeoutException:
+                print(f"Element {element_locator} not found, navigating to {start_url}.")
+                page.driver.get(start_url)
+                try:
+                    WebDriverWait(page.driver, timeout).until(
+                        EC.presence_of_element_located(element_locator)
+                    )
+                    print(f"Element {element_locator} found on the start URL page.")
+                except TimeoutException:
+                    print(f"Element {element_locator} still not found after navigating to start URL.")
+            return func(page, *args, **kwargs)
+        return wrapper
+    return decorator
+

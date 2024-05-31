@@ -25954,3 +25954,1867 @@ AttributeError: 'NoneType' object has no attribute 'click'
 2024-05-27 22:54:28 - decorators - 1840 - INFO : 开始执行测试用例 test_007_add_user_group
 2024-05-27 22:54:37 - decorators - 1840 - INFO : 开始执行测试用例 test_008_modify_group
 2024-05-27 22:54:40 - decorators - 1840 - INFO : 开始执行测试用例 test_009_delete_group
+2024-05-27 23:29:22 - base_util - 12160 - INFO : 开始执行前置操作
+2024-05-27 23:29:29 - base_page - 12160 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '//input[@formcontrolname="userId"]')
+2024-05-27 23:29:29 - base_page - 12160 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:29:37 - base_util - 2976 - INFO : 开始执行前置操作
+2024-05-27 23:29:40 - decorators - 2976 - INFO : 开始执行测试用例 test_001_add_co
+2024-05-27 23:29:40 - decorators - 2976 - ERROR : 发生异常 test_001_add_co
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 27, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 17, in test_001_add_co
+    co.add_co()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 42, in wrapper
+    if page.find_element(*element_locator) is None:
+       ^^^^^^^^^^^^^^^^^
+AttributeError: 'CoOperation' object has no attribute 'find_element'
+2024-05-27 23:29:40 - decorators - 2976 - INFO : 开始执行测试用例 test_002_modify_co
+2024-05-27 23:29:57 - decorators - 2976 - INFO : 开始执行测试用例 test_003_delete_co
+2024-05-27 23:30:00 - decorators - 2976 - INFO : 开始执行测试用例 test_004_add_employee
+2024-05-27 23:30:08 - decorators - 2976 - INFO : 开始执行测试用例 test_005_modify_employee
+2024-05-27 23:30:09 - base_page - 2976 - ERROR : 元素可能不可交互或未加载出，是这个('css selector', '[placeholder="请输入员工姓名"]')
+2024-05-27 23:30:09 - base_page - 2976 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:30:09 - decorators - 2976 - ERROR : 发生异常 test_005_modify_employee
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 27, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 43, in test_005_modify_employee
+    co.midify_employee()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 163, in midify_employee
+    self.clear_input(CoOperation.employee_name_loc,self.random())
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 60, in clear_input
+    self.clear(loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 87, in clear
+    ele.send_keys(Keys.CONTROL + "a")
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'send_keys'
+2024-05-27 23:30:09 - decorators - 2976 - INFO : 开始执行测试用例 test_006_stop_employee
+2024-05-27 23:30:09 - base_page - 2976 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '(//a[text()="停用"])[1]')
+2024-05-27 23:30:09 - base_page - 2976 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:30:09 - decorators - 2976 - ERROR : 发生异常 test_006_stop_employee
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 27, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 50, in test_006_stop_employee
+    co.stop_employee()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 176, in stop_employee
+    self.click(CoOperation.stop_employee_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-27 23:30:09 - decorators - 2976 - INFO : 开始执行测试用例 test_007_delete_employee
+2024-05-27 23:30:09 - base_page - 2976 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '(//a[text()="删除"])[1]')
+2024-05-27 23:30:09 - base_page - 2976 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:30:09 - decorators - 2976 - ERROR : 发生异常 test_007_delete_employee
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 27, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 57, in test_007_delete_employee
+    co.delete_employee()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 182, in delete_employee
+    self.click(CoOperation.delete_employee_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-27 23:30:09 - decorators - 2976 - INFO : 开始执行测试用例 test_008_export_employ
+2024-05-27 23:30:42 - base_util - 8728 - INFO : 开始执行前置操作
+2024-05-27 23:30:44 - decorators - 8728 - INFO : 开始执行测试用例 test_001_add_co
+2024-05-27 23:30:44 - decorators - 8728 - ERROR : 发生异常 test_001_add_co
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 27, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 17, in test_001_add_co
+    co.add_co()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 42, in wrapper
+    if page.find_element(*element_locator) is None:
+       ^^^^^^^^^^^^^^^^^
+AttributeError: 'CoOperation' object has no attribute 'find_element'
+2024-05-27 23:30:44 - decorators - 8728 - INFO : 开始执行测试用例 test_002_modify_co
+2024-05-27 23:31:02 - decorators - 8728 - INFO : 开始执行测试用例 test_003_delete_co
+2024-05-27 23:31:04 - base_page - 8728 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '(//a[text()=" 删除 "])[last()]')
+2024-05-27 23:31:04 - base_page - 8728 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:31:04 - decorators - 8728 - ERROR : 发生异常 test_003_delete_co
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 27, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 31, in test_003_delete_co
+    co.delete_co()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 142, in delete_co
+    self.click(CoOperation.delete_co_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-27 23:31:04 - decorators - 8728 - INFO : 开始执行测试用例 test_004_add_employee
+2024-05-27 23:31:04 - base_page - 8728 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '(//div[@class="ant-tabs-tab-btn"])[2]')
+2024-05-27 23:31:04 - base_page - 8728 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:31:04 - decorators - 8728 - ERROR : 发生异常 test_004_add_employee
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 27, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 36, in test_004_add_employee
+    co.add_employee()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 146, in add_employee
+    self.click(CoOperation.employee_management_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-27 23:31:04 - decorators - 8728 - INFO : 开始执行测试用例 test_005_modify_employee
+2024-05-27 23:31:04 - base_page - 8728 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '(//a[text()="修改"])[last()]')
+2024-05-27 23:31:04 - base_page - 8728 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:31:04 - decorators - 8728 - ERROR : 发生异常 test_005_modify_employee
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 27, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 43, in test_005_modify_employee
+    co.midify_employee()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 161, in midify_employee
+    self.click(CoOperation.modyfi_employee_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-27 23:31:04 - decorators - 8728 - INFO : 开始执行测试用例 test_006_stop_employee
+2024-05-27 23:31:04 - base_page - 8728 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '(//a[text()="停用"])[1]')
+2024-05-27 23:31:04 - base_page - 8728 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:31:04 - decorators - 8728 - ERROR : 发生异常 test_006_stop_employee
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 27, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 50, in test_006_stop_employee
+    co.stop_employee()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 176, in stop_employee
+    self.click(CoOperation.stop_employee_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-27 23:31:04 - decorators - 8728 - INFO : 开始执行测试用例 test_007_delete_employee
+2024-05-27 23:31:04 - base_page - 8728 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '(//a[text()="删除"])[1]')
+2024-05-27 23:31:04 - base_page - 8728 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:31:04 - decorators - 8728 - ERROR : 发生异常 test_007_delete_employee
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 27, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 57, in test_007_delete_employee
+    co.delete_employee()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 182, in delete_employee
+    self.click(CoOperation.delete_employee_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-27 23:31:04 - decorators - 8728 - INFO : 开始执行测试用例 test_008_export_employ
+2024-05-27 23:31:06 - base_page - 8728 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '//span[text()="导入"]')
+2024-05-27 23:31:06 - base_page - 8728 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:31:06 - decorators - 8728 - ERROR : 发生异常 test_008_export_employ
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 27, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 64, in test_008_export_employ
+    co.export_employee()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 191, in export_employee
+    self.scroll_into_view(CoOperation.export_employee_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 182, in scroll_into_view
+    self.driver.execute_script("arguments[0].scrollIntoView({ behavior: 'smooth', block: 'center' });", element)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 407, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:31:06 - decorators - 8728 - INFO : 开始执行测试用例 test_008_import_employee
+2024-05-27 23:31:08 - base_page - 8728 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '//span[text()="导出"]')
+2024-05-27 23:31:08 - base_page - 8728 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:31:08 - decorators - 8728 - ERROR : 发生异常 test_008_import_employee
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 27, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 71, in test_008_import_employee
+    co.import_employee()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 207, in import_employee
+    self.scroll_into_view(CoOperation.import_employee_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 182, in scroll_into_view
+    self.driver.execute_script("arguments[0].scrollIntoView({ behavior: 'smooth', block: 'center' });", element)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 407, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:31:08 - decorators - 8728 - INFO : 开始执行测试用例 test_010_add_site
+2024-05-27 23:31:08 - base_page - 8728 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '(//div[@class="ant-tabs-tab-btn"])[4]')
+2024-05-27 23:31:08 - base_page - 8728 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:31:08 - decorators - 8728 - ERROR : 发生异常 test_010_add_site
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 27, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 83, in test_010_add_site
+    co.add_sit()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 238, in add_sit
+    self.click(CoOperation.site_manage_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-27 23:31:08 - decorators - 8728 - INFO : 开始执行测试用例 test_011_modify_site
+2024-05-27 23:31:10 - base_page - 8728 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '(//a[contains(text(),"修改")])[1]')
+2024-05-27 23:31:10 - base_page - 8728 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:31:10 - decorators - 8728 - ERROR : 发生异常 test_011_modify_site
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 27, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 91, in test_011_modify_site
+    co.modify_site()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 254, in modify_site
+    self.click(CoOperation.modify_site_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-27 23:31:10 - decorators - 8728 - INFO : 开始执行测试用例 test_012_delete_site
+2024-05-27 23:31:11 - base_page - 8728 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '(//a[text()="删除"])[1]')
+2024-05-27 23:31:11 - base_page - 8728 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:31:11 - decorators - 8728 - ERROR : 发生异常 test_012_delete_site
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 27, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 98, in test_012_delete_site
+    co.delete_site()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 268, in delete_site
+    self.click(CoOperation.delete_site_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-27 23:35:16 - base_util - 21864 - INFO : 开始执行前置操作
+2024-05-27 23:35:20 - decorators - 21864 - INFO : 开始执行测试用例 test_001_add_co
+2024-05-27 23:35:30 - decorators - 21864 - ERROR : 发生异常 test_001_add_co
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 51, in wrapper
+    WebDriverWait(page.driver, timeout).until(
+  File "D:\python\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F4D6D4D]
+	(No symbol) [0x00007FF73F4D6E1C]
+	(No symbol) [0x00007FF73F51CE37]
+	(No symbol) [0x00007FF73F4FABBF]
+	(No symbol) [0x00007FF73F51A224]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 17, in test_001_add_co
+    co.add_co()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 55, in wrapper
+    page.driver.get(start_url)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 356, in get
+    self.execute(Command.GET, {"url": url})
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487B13]
+	(No symbol) [0x00007FF73F4705E0]
+	(No symbol) [0x00007FF73F46EC3D]
+	(No symbol) [0x00007FF73F46F22C]
+	(No symbol) [0x00007FF73F48A9F9]
+	(No symbol) [0x00007FF73F51AB7E]
+	(No symbol) [0x00007FF73F4FAB7A]
+	(No symbol) [0x00007FF73F51A224]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:35:30 - decorators - 21864 - INFO : 开始执行测试用例 test_002_modify_co
+2024-05-27 23:35:49 - decorators - 21864 - INFO : 开始执行测试用例 test_003_delete_co
+2024-05-27 23:35:52 - decorators - 21864 - INFO : 开始执行测试用例 test_004_add_employee
+2024-05-27 23:35:59 - decorators - 21864 - INFO : 开始执行测试用例 test_005_modify_employee
+2024-05-27 23:36:03 - decorators - 21864 - INFO : 开始执行测试用例 test_006_stop_employee
+2024-05-27 23:36:04 - decorators - 21864 - INFO : 开始执行测试用例 test_007_delete_employee
+2024-05-27 23:36:05 - decorators - 21864 - INFO : 开始执行测试用例 test_008_export_employ
+2024-05-27 23:36:22 - decorators - 21864 - ERROR : 发生异常 test_008_export_employ
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 64, in test_008_export_employ
+    co.export_employee()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 200, in export_employee
+    self.click(CoOperation.export_button_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span _ngcontent-yeh-c301="" class="ng-star-inserted">...</span> is not clickable at point (763, 284). Other element would receive the click: <button _ngcontent-yeh-c301="" dw-button="" dwtype="primary" class="ant-btn ant-btn-primary" tabindex="-1" disabled="true">...</button>
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F4DE877]
+	(No symbol) [0x00007FF73F4DC344]
+	(No symbol) [0x00007FF73F4D980A]
+	(No symbol) [0x00007FF73F4D89E2]
+	(No symbol) [0x00007FF73F4CAE8B]
+	(No symbol) [0x00007FF73F4FAB7A]
+	(No symbol) [0x00007FF73F4CA7C6]
+	(No symbol) [0x00007FF73F4FAD90]
+	(No symbol) [0x00007FF73F51A224]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:36:22 - decorators - 21864 - INFO : 开始执行测试用例 test_008_import_employee
+2024-05-27 23:36:28 - decorators - 21864 - ERROR : 发生异常 test_008_import_employee
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 71, in test_008_import_employee
+    co.import_employee()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 209, in import_employee
+    self.click(CoOperation.import_employee_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span _ngcontent-yeh-c306="" translate="">...</span> is not clickable at point (457, 131). Other element would receive the click: <div class="ant-drawer-mask ng-star-inserted"></div>
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F4DE877]
+	(No symbol) [0x00007FF73F4DC344]
+	(No symbol) [0x00007FF73F4D980A]
+	(No symbol) [0x00007FF73F4D89E2]
+	(No symbol) [0x00007FF73F4CAE8B]
+	(No symbol) [0x00007FF73F4FAB7A]
+	(No symbol) [0x00007FF73F4CA7C6]
+	(No symbol) [0x00007FF73F4FAD90]
+	(No symbol) [0x00007FF73F51A224]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:36:28 - decorators - 21864 - INFO : 开始执行测试用例 test_010_add_site
+2024-05-27 23:36:29 - decorators - 21864 - ERROR : 发生异常 test_010_add_site
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 83, in test_010_add_site
+    co.add_sit()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 238, in add_sit
+    self.click(CoOperation.site_manage_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div role="tab" dwtabnavitem="" cdkmonitorelementfocus="" class="ant-tabs-tab-btn" tabindex="-1" aria-disabled="false" aria-selected="false" aria-controls="dw-tabs-0-tab-3">...</div> is not clickable at point (408, 75). Other element would receive the click: <div class="ant-drawer-mask ng-star-inserted"></div>
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F4DE877]
+	(No symbol) [0x00007FF73F4DC344]
+	(No symbol) [0x00007FF73F4D980A]
+	(No symbol) [0x00007FF73F4D89E2]
+	(No symbol) [0x00007FF73F4CAE8B]
+	(No symbol) [0x00007FF73F4FAB7A]
+	(No symbol) [0x00007FF73F4CA7C6]
+	(No symbol) [0x00007FF73F4FAD90]
+	(No symbol) [0x00007FF73F51A224]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:36:29 - decorators - 21864 - INFO : 开始执行测试用例 test_011_modify_site
+2024-05-27 23:36:32 - decorators - 21864 - ERROR : 发生异常 test_011_modify_site
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 91, in test_011_modify_site
+    co.modify_site()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 254, in modify_site
+    self.click(CoOperation.modify_site_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a _ngcontent-yeh-c306="" dwactionauthorized="" translate="">...</a> is not clickable at point (1309, 234). Other element would receive the click: <div _ngcontent-yeh-c301="" class="ng-star-inserted">...</div>
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F4DE877]
+	(No symbol) [0x00007FF73F4DC344]
+	(No symbol) [0x00007FF73F4D980A]
+	(No symbol) [0x00007FF73F4D89E2]
+	(No symbol) [0x00007FF73F4CAE8B]
+	(No symbol) [0x00007FF73F4FAB7A]
+	(No symbol) [0x00007FF73F4CA7C6]
+	(No symbol) [0x00007FF73F4FAD90]
+	(No symbol) [0x00007FF73F51A224]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:36:32 - decorators - 21864 - INFO : 开始执行测试用例 test_012_delete_site
+2024-05-27 23:36:43 - base_page - 21864 - ERROR : 元素定位超时了，是这个('xpath', '(//a[text()="删除"])[1]')
+2024-05-27 23:36:43 - decorators - 21864 - ERROR : 发生异常 test_012_delete_site
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 98, in test_012_delete_site
+    co.delete_site()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 268, in delete_site
+    self.click(CoOperation.delete_site_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-27 23:40:33 - base_util - 23184 - INFO : 开始执行前置操作
+2024-05-27 23:40:37 - decorators - 23184 - INFO : 开始执行测试用例 test_001_add_co
+2024-05-27 23:41:01 - base_page - 23184 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '//span[text()="企业运营"]')
+2024-05-27 23:41:01 - base_page - 23184 - ERROR : 'NoneType' object has no attribute 'is_displayed'
+2024-05-27 23:41:01 - decorators - 23184 - ERROR : 发生异常 test_001_add_co
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 17, in test_001_add_co
+    co.add_co()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 65, in wrapper
+    return func(page, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 106, in add_co
+    self.click(CoOperation.co_operat_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-27 23:41:01 - decorators - 23184 - INFO : 开始执行测试用例 test_002_modify_co
+2024-05-27 23:41:03 - base_page - 23184 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '(//a[text()=" 修改 "])[last()]')
+2024-05-27 23:41:03 - base_page - 23184 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:41:03 - decorators - 23184 - ERROR : 发生异常 test_002_modify_co
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 120, in modify_co
+    self.waite_ele(CoOperation.modify_co_loc,5)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 50, in waite_ele
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 741, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 122, in modify_co
+    self.refresh_url(CoOperation.operate_url)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 173, in refresh_url
+    self.driver.get(url)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 356, in get
+    self.execute(Command.GET, {"url": url})
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 24, in test_002_modify_co
+    co.modify_co()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 125, in modify_co
+    self.click(CoOperation.modify_co_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-27 23:41:03 - decorators - 23184 - INFO : 开始执行测试用例 test_003_delete_co
+2024-05-27 23:41:05 - base_page - 23184 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '(//a[text()=" 删除 "])[last()]')
+2024-05-27 23:41:05 - base_page - 23184 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:41:05 - decorators - 23184 - ERROR : 发生异常 test_003_delete_co
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 137, in delete_co
+    self.waite_ele(CoOperation.delete_co_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 50, in waite_ele
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 741, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 139, in delete_co
+    self.refresh_url(CoOperation.operate_url)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 173, in refresh_url
+    self.driver.get(url)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 356, in get
+    self.execute(Command.GET, {"url": url})
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 31, in test_003_delete_co
+    co.delete_co()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 142, in delete_co
+    self.click(CoOperation.delete_co_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-27 23:41:05 - decorators - 23184 - INFO : 开始执行测试用例 test_004_add_employee
+2024-05-27 23:41:05 - base_page - 23184 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '(//div[@class="ant-tabs-tab-btn"])[2]')
+2024-05-27 23:41:05 - base_page - 23184 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:41:05 - decorators - 23184 - ERROR : 发生异常 test_004_add_employee
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 36, in test_004_add_employee
+    co.add_employee()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 146, in add_employee
+    self.click(CoOperation.employee_management_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-27 23:41:05 - decorators - 23184 - INFO : 开始执行测试用例 test_005_modify_employee
+2024-05-27 23:41:05 - base_page - 23184 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '(//a[text()="修改"])[last()]')
+2024-05-27 23:41:05 - base_page - 23184 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:41:05 - decorators - 23184 - ERROR : 发生异常 test_005_modify_employee
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 43, in test_005_modify_employee
+    co.midify_employee()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 161, in midify_employee
+    self.click(CoOperation.modyfi_employee_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-27 23:41:06 - decorators - 23184 - INFO : 开始执行测试用例 test_006_stop_employee
+2024-05-27 23:41:06 - base_page - 23184 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '(//a[text()="停用"])[1]')
+2024-05-27 23:41:06 - base_page - 23184 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:41:06 - decorators - 23184 - ERROR : 发生异常 test_006_stop_employee
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 50, in test_006_stop_employee
+    co.stop_employee()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 176, in stop_employee
+    self.click(CoOperation.stop_employee_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-27 23:41:06 - decorators - 23184 - INFO : 开始执行测试用例 test_007_delete_employee
+2024-05-27 23:41:06 - base_page - 23184 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '(//a[text()="删除"])[1]')
+2024-05-27 23:41:06 - base_page - 23184 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:41:06 - decorators - 23184 - ERROR : 发生异常 test_007_delete_employee
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 57, in test_007_delete_employee
+    co.delete_employee()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 182, in delete_employee
+    self.click(CoOperation.delete_employee_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-27 23:41:06 - decorators - 23184 - INFO : 开始执行测试用例 test_008_export_employ
+2024-05-27 23:41:08 - base_page - 23184 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '//span[text()="导入"]')
+2024-05-27 23:41:08 - base_page - 23184 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:41:08 - decorators - 23184 - ERROR : 发生异常 test_008_export_employ
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 64, in test_008_export_employ
+    co.export_employee()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 191, in export_employee
+    self.scroll_into_view(CoOperation.export_employee_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 182, in scroll_into_view
+    self.driver.execute_script("arguments[0].scrollIntoView({ behavior: 'smooth', block: 'center' });", element)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 407, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:41:08 - decorators - 23184 - INFO : 开始执行测试用例 test_008_import_employee
+2024-05-27 23:41:10 - base_page - 23184 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '//span[text()="导出"]')
+2024-05-27 23:41:10 - base_page - 23184 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:41:10 - decorators - 23184 - ERROR : 发生异常 test_008_import_employee
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 71, in test_008_import_employee
+    co.import_employee()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 207, in import_employee
+    self.scroll_into_view(CoOperation.import_employee_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 182, in scroll_into_view
+    self.driver.execute_script("arguments[0].scrollIntoView({ behavior: 'smooth', block: 'center' });", element)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 407, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:41:10 - decorators - 23184 - INFO : 开始执行测试用例 test_010_add_site
+2024-05-27 23:41:10 - base_page - 23184 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '(//div[@class="ant-tabs-tab-btn"])[4]')
+2024-05-27 23:41:10 - base_page - 23184 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:41:10 - decorators - 23184 - ERROR : 发生异常 test_010_add_site
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 83, in test_010_add_site
+    co.add_sit()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 238, in add_sit
+    self.click(CoOperation.site_manage_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-27 23:41:10 - decorators - 23184 - INFO : 开始执行测试用例 test_011_modify_site
+2024-05-27 23:41:12 - base_page - 23184 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '(//a[contains(text(),"修改")])[1]')
+2024-05-27 23:41:12 - base_page - 23184 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:41:12 - decorators - 23184 - ERROR : 发生异常 test_011_modify_site
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 91, in test_011_modify_site
+    co.modify_site()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 254, in modify_site
+    self.click(CoOperation.modify_site_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-27 23:41:12 - decorators - 23184 - INFO : 开始执行测试用例 test_012_delete_site
+2024-05-27 23:41:13 - base_page - 23184 - ERROR : 元素可能不可交互或未加载出，是这个('xpath', '(//a[text()="删除"])[1]')
+2024-05-27 23:41:13 - base_page - 23184 - ERROR : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73F651502+60802]
+	(No symbol) [0x00007FF73F5CAC02]
+	(No symbol) [0x00007FF73F487CE4]
+	(No symbol) [0x00007FF73F45DFDF]
+	(No symbol) [0x00007FF73F501E57]
+	(No symbol) [0x00007FF73F5198D1]
+	(No symbol) [0x00007FF73F4FA923]
+	(No symbol) [0x00007FF73F4C8FEC]
+	(No symbol) [0x00007FF73F4C9C21]
+	GetHandleVerifier [0x00007FF73F95411D+3217821]
+	GetHandleVerifier [0x00007FF73F9960B7+3488055]
+	GetHandleVerifier [0x00007FF73F98F03F+3459263]
+	GetHandleVerifier [0x00007FF73F70B846+823494]
+	(No symbol) [0x00007FF73F5D5F9F]
+	(No symbol) [0x00007FF73F5D0EC4]
+	(No symbol) [0x00007FF73F5D1052]
+	(No symbol) [0x00007FF73F5C18A4]
+	BaseThreadInitThunk [0x00007FFE6F53257D+29]
+	RtlUserThreadStart [0x00007FFE70E4AA48+40]
+
+2024-05-27 23:41:13 - decorators - 23184 - ERROR : 发生异常 test_012_delete_site
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 98, in test_012_delete_site
+    co.delete_site()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 268, in delete_site
+    self.click(CoOperation.delete_site_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-29 20:46:17 - test_case001 - 8180 - DEBUG : 中文
+2024-05-29 20:46:17 - test_case001 - 8180 - INFO : 英文
+2024-05-29 20:46:17 - test_case001 - 8180 - WARNING : 汉语
+2024-05-29 20:46:17 - test_case001 - 8180 - ERROR : 日志
+2024-05-29 20:46:17 - test_case001 - 8180 - CRITICAL : 开始
+2024-05-29 21:44:06 - test_case001 - 8032 - DEBUG : 中文
+2024-05-29 21:44:06 - test_case001 - 8032 - INFO : 英文
+2024-05-29 21:44:06 - test_case001 - 8032 - WARNING : 汉语
+2024-05-29 21:44:06 - test_case001 - 8032 - ERROR : 日志
+2024-05-29 21:44:06 - test_case001 - 8032 - CRITICAL : 开始
+2024-05-29 21:45:57 - base_util - 8032 - INFO : 开始执行前置操作
+2024-05-29 21:45:59 - decorators - 8032 - INFO : 开始执行测试用例 test_001_add_co
+2024-05-29 21:46:03 - decorators - 8032 - INFO : 开始执行测试用例 test_002_modify_co
+2024-05-29 21:46:11 - decorators - 8032 - INFO : 开始执行测试用例 test_003_delete_co
+2024-05-29 21:46:13 - decorators - 8032 - INFO : 开始执行测试用例 test_004_add_employee
+2024-05-29 21:46:21 - decorators - 8032 - INFO : 开始执行测试用例 test_005_modify_employee
+2024-05-29 21:46:25 - decorators - 8032 - INFO : 开始执行测试用例 test_006_stop_employee
+2024-05-29 21:46:26 - decorators - 8032 - INFO : 开始执行测试用例 test_007_delete_employee
+2024-05-29 21:46:28 - decorators - 8032 - INFO : 开始执行测试用例 test_008_export_employ
+2024-05-29 21:46:45 - decorators - 8032 - INFO : 开始执行测试用例 test_008_import_employee
+2024-05-29 21:46:50 - decorators - 8032 - INFO : 开始执行测试用例 test_010_add_site
+2024-05-29 21:46:51 - decorators - 8032 - ERROR : 发生异常 test_010_add_site
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 83, in test_010_add_site
+    co.add_sit()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 238, in add_sit
+    self.click(CoOperation.site_manage_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div role="tab" dwtabnavitem="" cdkmonitorelementfocus="" class="ant-tabs-tab-btn" tabindex="-1" aria-disabled="false" aria-selected="false" aria-controls="dw-tabs-2-tab-3">...</div> is not clickable at point (408, 75). Other element would receive the click: <div class="ant-drawer-mask ng-star-inserted"></div>
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x004AB793+45827]
+	(No symbol) [0x0043DB74]
+	(No symbol) [0x0033150F]
+	(No symbol) [0x00378052]
+	(No symbol) [0x003763D8]
+	(No symbol) [0x0037425B]
+	(No symbol) [0x00373823]
+	(No symbol) [0x003685EF]
+	(No symbol) [0x00392DFC]
+	(No symbol) [0x00368075]
+	(No symbol) [0x00393094]
+	(No symbol) [0x003AC034]
+	(No symbol) [0x00392B96]
+	(No symbol) [0x00366998]
+	(No symbol) [0x0036751D]
+	GetHandleVerifier [0x007643C3+2899763]
+	GetHandleVerifier [0x007B77ED+3240797]
+	GetHandleVerifier [0x00531264+593364]
+	GetHandleVerifier [0x0053818C+621820]
+	(No symbol) [0x00446F54]
+	(No symbol) [0x00443658]
+	(No symbol) [0x004437F7]
+	(No symbol) [0x004358AE]
+	BaseThreadInitThunk [0x758A7BA9+25]
+	RtlInitializeExceptionChain [0x7707BE3B+107]
+	RtlClearBits [0x7707BDBF+191]
+
+2024-05-29 21:46:51 - decorators - 8032 - INFO : 开始执行测试用例 test_011_modify_site
+2024-05-29 21:47:04 - base_page - 8032 - ERROR : 元素定位超时了，是这个('css selector', '[title="采购域"]')
+2024-05-29 21:47:04 - decorators - 8032 - ERROR : 发生异常 test_011_modify_site
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 91, in test_011_modify_site
+    co.modify_site()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 255, in modify_site
+    self.click(CoOperation.site_modify_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-29 21:47:04 - decorators - 8032 - INFO : 开始执行测试用例 test_012_delete_site
+2024-05-29 21:47:15 - base_page - 8032 - ERROR : 元素定位超时了，是这个('xpath', '(//a[text()="删除"])[1]')
+2024-05-29 21:47:15 - decorators - 8032 - ERROR : 发生异常 test_012_delete_site
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_co_operate.py", line 98, in test_012_delete_site
+    co.delete_site()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\co_manage.py", line 268, in delete_site
+    self.click(CoOperation.delete_site_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-29 21:47:21 - test_login - 8032 - INFO : 测试登录前置操作
+2024-05-29 21:47:22 - test_login - 8032 - INFO : 用户名:18538231111 密码:Gold7789
+2024-05-29 21:47:29 - test_login - 8032 - INFO : 测试登录前置操作
+2024-05-29 21:47:30 - test_login - 8032 - INFO : 用户名:18538231111 密码:Gold7788
+2024-05-29 21:47:36 - test_login - 8032 - INFO : 测试登录前置操作
+2024-05-29 21:47:37 - test_login - 8032 - INFO : 用户名:18538231112 密码:Gold7789
+2024-05-29 21:47:43 - base_util - 8032 - INFO : 开始执行前置操作
+2024-05-29 21:47:45 - decorators - 8032 - INFO : 开始执行测试用例 test_001_add_user
+2024-05-29 21:47:47 - decorators - 8032 - INFO : 开始执行测试用例 test_002_modify_user
+2024-05-29 21:47:53 - decorators - 8032 - INFO : 开始执行测试用例 test_003_stop
+2024-05-29 21:47:55 - decorators - 8032 - INFO : 开始执行测试用例 test_004_del
+2024-05-29 21:48:01 - decorators - 8032 - INFO : 开始执行测试用例 test_005_invite_user
+2024-05-29 21:48:07 - decorators - 8032 - INFO : 开始执行测试用例 test_006_invite_users
+2024-05-29 21:48:17 - decorators - 8032 - INFO : 开始执行测试用例 test_007_add_user_group
+2024-05-29 21:48:26 - decorators - 8032 - INFO : 开始执行测试用例 test_008_modify_group
+2024-05-29 21:48:30 - decorators - 8032 - INFO : 开始执行测试用例 test_009_delete_group
+2024-05-29 21:49:21 - test_case001 - 9756 - DEBUG : 中文
+2024-05-29 21:49:21 - test_case001 - 9756 - INFO : 英文
+2024-05-29 21:49:21 - test_case001 - 9756 - WARNING : 汉语
+2024-05-29 21:49:21 - test_case001 - 9756 - ERROR : 日志
+2024-05-29 21:49:21 - test_case001 - 9756 - CRITICAL : 开始
+2024-05-29 21:49:28 - base_util - 9756 - INFO : 开始执行前置操作
+2024-05-29 21:49:30 - decorators - 9756 - INFO : 开始执行测试用例 test_001_add_co
+2024-05-29 21:49:34 - decorators - 9756 - INFO : 开始执行测试用例 test_002_modify_co
+2024-05-29 21:49:42 - decorators - 9756 - INFO : 开始执行测试用例 test_003_delete_co
+2024-05-29 21:49:44 - decorators - 9756 - INFO : 开始执行测试用例 test_004_add_employee
+2024-05-29 21:49:52 - decorators - 9756 - INFO : 开始执行测试用例 test_005_modify_employee
+2024-05-29 21:49:56 - decorators - 9756 - INFO : 开始执行测试用例 test_006_stop_employee
+2024-05-29 21:49:57 - decorators - 9756 - INFO : 开始执行测试用例 test_007_delete_employee
+2024-05-29 21:49:58 - decorators - 9756 - INFO : 开始执行测试用例 test_008_export_employ
+2024-05-29 21:50:15 - decorators - 9756 - INFO : 开始执行测试用例 test_008_import_employee
+2024-05-29 21:50:20 - decorators - 9756 - INFO : 开始执行测试用例 test_010_add_site
+2024-05-29 21:50:24 - decorators - 9756 - INFO : 开始执行测试用例 test_011_modify_site
+2024-05-29 21:50:34 - decorators - 9756 - INFO : 开始执行测试用例 test_012_delete_site
+2024-05-29 21:50:42 - test_login - 9756 - INFO : 测试登录前置操作
+2024-05-29 21:50:43 - test_login - 9756 - INFO : 用户名:18538231111 密码:Gold7789
+2024-05-29 21:50:49 - test_login - 9756 - INFO : 测试登录前置操作
+2024-05-29 21:50:50 - test_login - 9756 - INFO : 用户名:18538231111 密码:Gold7788
+2024-05-29 21:50:57 - test_login - 9756 - INFO : 测试登录前置操作
+2024-05-29 21:50:58 - test_login - 9756 - INFO : 用户名:18538231112 密码:Gold7789
+2024-05-29 21:51:03 - base_util - 9756 - INFO : 开始执行前置操作
+2024-05-29 21:51:05 - decorators - 9756 - INFO : 开始执行测试用例 test_001_add_user
+2024-05-29 21:51:08 - decorators - 9756 - INFO : 开始执行测试用例 test_002_modify_user
+2024-05-29 21:51:13 - decorators - 9756 - INFO : 开始执行测试用例 test_003_stop
+2024-05-29 21:51:15 - decorators - 9756 - INFO : 开始执行测试用例 test_004_del
+2024-05-29 21:51:20 - decorators - 9756 - INFO : 开始执行测试用例 test_005_invite_user
+2024-05-29 21:51:26 - decorators - 9756 - INFO : 开始执行测试用例 test_006_invite_users
+2024-05-29 21:51:35 - decorators - 9756 - INFO : 开始执行测试用例 test_007_add_user_group
+2024-05-29 21:51:44 - decorators - 9756 - INFO : 开始执行测试用例 test_008_modify_group
+2024-05-29 21:51:48 - decorators - 9756 - INFO : 开始执行测试用例 test_009_delete_group
+2024-05-31 19:58:37 - test_case001 - 10424 - DEBUG : 中文
+2024-05-31 19:58:37 - test_case001 - 10424 - INFO : 英文
+2024-05-31 19:58:37 - test_case001 - 10424 - WARNING : 汉语
+2024-05-31 19:58:37 - test_case001 - 10424 - ERROR : 日志
+2024-05-31 19:58:37 - test_case001 - 10424 - CRITICAL : 开始
+2024-05-31 20:01:43 - test_case001 - 2524 - DEBUG : 中文
+2024-05-31 20:01:43 - test_case001 - 2524 - INFO : 英文
+2024-05-31 20:01:43 - test_case001 - 2524 - WARNING : 汉语
+2024-05-31 20:01:43 - test_case001 - 2524 - ERROR : 日志
+2024-05-31 20:01:43 - test_case001 - 2524 - CRITICAL : 开始
+2024-05-31 20:03:01 - base_util - 2524 - INFO : 开始执行前置操作
+2024-05-31 20:03:06 - decorators - 2524 - INFO : 开始执行测试用例 test_001_add_co
+2024-05-31 20:03:10 - decorators - 2524 - INFO : 开始执行测试用例 test_002_modify_co
+2024-05-31 20:03:18 - decorators - 2524 - INFO : 开始执行测试用例 test_003_delete_co
+2024-05-31 20:03:20 - decorators - 2524 - INFO : 开始执行测试用例 test_004_add_employee
+2024-05-31 20:03:28 - decorators - 2524 - INFO : 开始执行测试用例 test_005_modify_employee
+2024-05-31 20:03:32 - decorators - 2524 - INFO : 开始执行测试用例 test_006_stop_employee
+2024-05-31 20:03:34 - decorators - 2524 - INFO : 开始执行测试用例 test_007_delete_employee
+2024-05-31 20:03:35 - decorators - 2524 - INFO : 开始执行测试用例 test_008_export_employ
+2024-05-31 20:03:53 - decorators - 2524 - INFO : 开始执行测试用例 test_008_import_employee
+2024-05-31 20:03:58 - decorators - 2524 - INFO : 开始执行测试用例 test_010_add_site
+2024-05-31 20:04:03 - decorators - 2524 - INFO : 开始执行测试用例 test_011_modify_site
+2024-05-31 20:04:12 - decorators - 2524 - INFO : 开始执行测试用例 test_012_delete_site
+2024-05-31 20:04:21 - test_login - 2524 - INFO : 测试登录前置操作
+2024-05-31 20:04:23 - test_login - 2524 - INFO : 用户名:18538231111 密码:Gold7789
+2024-05-31 20:04:29 - test_login - 2524 - INFO : 测试登录前置操作
+2024-05-31 20:04:31 - test_login - 2524 - INFO : 用户名:18538231111 密码:Gold7788
+2024-05-31 20:04:38 - test_login - 2524 - INFO : 测试登录前置操作
+2024-05-31 20:04:39 - test_login - 2524 - INFO : 用户名:18538231112 密码:Gold7789
+2024-05-31 20:04:45 - base_util - 2524 - INFO : 开始执行前置操作
+2024-05-31 20:04:49 - decorators - 2524 - INFO : 开始执行测试用例 test_001_add_user
+2024-05-31 20:04:53 - decorators - 2524 - INFO : 开始执行测试用例 test_002_modify_user
+2024-05-31 20:04:59 - decorators - 2524 - INFO : 开始执行测试用例 test_003_stop
+2024-05-31 20:05:01 - decorators - 2524 - INFO : 开始执行测试用例 test_004_del
+2024-05-31 20:05:08 - decorators - 2524 - INFO : 开始执行测试用例 test_005_invite_user
+2024-05-31 20:05:14 - decorators - 2524 - INFO : 开始执行测试用例 test_006_invite_users
+2024-05-31 20:05:24 - decorators - 2524 - INFO : 开始执行测试用例 test_007_add_user_group
+2024-05-31 20:05:25 - decorators - 2524 - ERROR : 发生异常 test_007_add_user_group
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_user_manager.py", line 48, in test_007_add_user_group
+    um.add_user_group()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\uesr_manage_page.py", line 177, in add_user_group
+    self.click(UserManagePage.user_group_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "D:\python\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div role="tab" dwtabnavitem="" cdkmonitorelementfocus="" class="ant-tabs-tab-btn" tabindex="-1" aria-disabled="false" aria-selected="false" aria-controls="dw-tabs-2-tab-1">...</div> is not clickable at point (212, 75). Other element would receive the click: <div class="ant-drawer-mask ng-star-inserted"></div>
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00F5B8E3+45827]
+	(No symbol) [0x00EEDCC4]
+	(No symbol) [0x00DE150F]
+	(No symbol) [0x00E28052]
+	(No symbol) [0x00E263D8]
+	(No symbol) [0x00E2425B]
+	(No symbol) [0x00E23823]
+	(No symbol) [0x00E185EF]
+	(No symbol) [0x00E42DFC]
+	(No symbol) [0x00E18075]
+	(No symbol) [0x00E43094]
+	(No symbol) [0x00E5C034]
+	(No symbol) [0x00E42B96]
+	(No symbol) [0x00E16998]
+	(No symbol) [0x00E1751D]
+	GetHandleVerifier [0x01214513+2899763]
+	GetHandleVerifier [0x0126793D+3240797]
+	GetHandleVerifier [0x00FE13B4+593364]
+	GetHandleVerifier [0x00FE82DC+621820]
+	(No symbol) [0x00EF70A4]
+	(No symbol) [0x00EF37A8]
+	(No symbol) [0x00EF3947]
+	(No symbol) [0x00EE59FE]
+	BaseThreadInitThunk [0x758A7BA9+25]
+	RtlInitializeExceptionChain [0x7707BE3B+107]
+	RtlClearBits [0x7707BDBF+191]
+
+2024-05-31 20:05:25 - decorators - 2524 - INFO : 开始执行测试用例 test_008_modify_group
+2024-05-31 20:05:35 - base_page - 2524 - ERROR : 元素定位超时了，是这个('xpath', '(//a[text()=" 修改 "])[last()]')
+2024-05-31 20:05:35 - decorators - 2524 - ERROR : 发生异常 test_008_modify_group
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_user_manager.py", line 54, in test_008_modify_group
+    um.modify_group()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\uesr_manage_page.py", line 203, in modify_group
+    self.click(UserManagePage.modifu_group_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+2024-05-31 20:05:35 - decorators - 2524 - INFO : 开始执行测试用例 test_009_delete_group
+2024-05-31 20:05:46 - base_page - 2524 - ERROR : 元素定位超时了，是这个('xpath', '(//a[@angularticslabel="刪除用戶群組"])[last()]')
+2024-05-31 20:05:46 - decorators - 2524 - ERROR : 发生异常 test_009_delete_group
+Traceback (most recent call last):
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\decorators.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\testcase\test_user_manager.py", line 60, in test_009_delete_group
+    um.delete_user_group()
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\pages\uesr_manage_page.py", line 221, in delete_user_group
+    self.click(UserManagePage.delete_user_group_loc)
+  File "C:\Users\14972\PycharmProjects\pythonProject_baili\base\base_page.py", line 67, in click
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
