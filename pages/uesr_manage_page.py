@@ -14,7 +14,7 @@ class UserManagePage(BasePage):
     user_name_loc = (By.XPATH,'//div[@class="ant-form-item-control-input-content ng-tns-c73-29"]/input')
     password_loc = (By.XPATH,'//input[@class="ant-input ng-tns-c73-30 ng-untouched ng-pristine ng-invalid"]')
     save_loc = (By.XPATH,'//span[contains(text(),"储存")]')
-    add_done = (By.XPATH,'//span[contains(text(),"新增完成")]')
+    add_done = (By.XPATH,'//span[contains(text(),"新增成功")]')
     stop_use = (By.XPATH,'(//a[contains(text(),"停用")])[last()]')
     #编辑操作
     uaser_manage_url = "https://console-paas.digiwincloud.com.cn/mang-user"
@@ -40,7 +40,7 @@ class UserManagePage(BasePage):
     user_chartra_loc = (By.CSS_SELECTOR,'(//dw-select-item[contains(@title,"用户")])[2]')
     out_user_loc = (By.XPATH,'(//div[@class="ant-select-item-option-content"])[2]')
     button_send_message_loc = (By.CSS_SELECTOR,'[angularticslabel="送出用戶邀請訊息"]')
-    assert_invite_success_loc = (By.CSS_SELECTOR,'[class="ant-message-custom-content ng-tns-c62-56 ant-message-success"]')
+    assert_invite_success_loc = (By.XPATH,'//span[contains(text(),"邀请发起成功")]')
     #批量邀请
     invite_users_manage_loc = (By.CSS_SELECTOR,'[angularticscategory="用戶管理-批量邀請"]')
     upload_file_loc = (By.CSS_SELECTOR,'[angularticscategory="用戶管理-上傳批量檔案"]')
@@ -63,11 +63,11 @@ class UserManagePage(BasePage):
     modify_kenel_loc = (By.CSS_SELECTOR,'[class="ant-select-selection-item ng-star-inserted"]')
     modify_dep_loc = (By.XPATH,'(//div[@class="ant-select-item-option-content"])[2]')
     modify_group_save_loc = (By.CSS_SELECTOR,'[class="btn ant-btn ant-btn-primary"]')
-    assert_modify_group_loc = (By.XPATH,'//font[text()="用户群组已修改"]')
+    assert_modify_group_loc = (By.XPATH,'//span[text()="用户群组已修改"]')
     #删除用户群组
     delete_user_group_loc = (By.XPATH,'(//a[@angularticslabel="刪除用戶群組"])[last()]')
     delete_confirm_loc = (By.XPATH,'//span[text()=" 确定 "]')
-    assert_delete_user_loc = (By.XPATH,'//span[text()="用户群组已删除"]')
+    assert_delete_user_loc = (By.XPATH,'//span[contains(text(),"用户群组已删除")]')
 
     #页面操作
     #新增用户
