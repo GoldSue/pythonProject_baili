@@ -43,7 +43,7 @@ class UserManagePage(BasePage):
     assert_invite_success_loc = (By.XPATH,'//span[contains(text(),"邀请发起成功")]')
     #批量邀请
     invite_users_manage_loc = (By.CSS_SELECTOR,'[angularticscategory="用戶管理-批量邀請"]')
-    upload_file_loc = (By.CSS_SELECTOR,'[angularticscategory="用戶管理-上傳批量檔案"]')
+    upload_file_loc = (By.CSS_SELECTOR,'[type="file"]')
     # file_path_loc = "D:\pythonProject_baili\data\account_invite.xlsx"
     button_send_file_loc = (By.CSS_SELECTOR,'[angularticscategory="用戶管理-送出批量邀請訊息"]')
     #用户群组
@@ -58,14 +58,14 @@ class UserManagePage(BasePage):
     close_add_window_loc = (By.XPATH, '[class="ant-modal-close-x"]')
     # 修改用户群组
     group_url = "/mang-user/organization-mang/org-list"
-    modifu_group_loc = (By.XPATH,'(//a[text()=" 修改 "])[last()]')
+    modifu_group_loc = (By.XPATH,'(//a[text()=" 修改 "])[1]')
     modify_group_name_loc = (By.CSS_SELECTOR,'[placeholder="请输入用户群组名称"]')
     modify_kenel_loc = (By.CSS_SELECTOR,'[class="ant-select-selection-item ng-star-inserted"]')
     modify_dep_loc = (By.XPATH,'(//div[@class="ant-select-item-option-content"])[2]')
     modify_group_save_loc = (By.CSS_SELECTOR,'[class="btn ant-btn ant-btn-primary"]')
     assert_modify_group_loc = (By.XPATH,'//span[text()="用户群组已修改"]')
     #删除用户群组
-    delete_user_group_loc = (By.XPATH,'(//a[@angularticslabel="刪除用戶群組"])[last()]')
+    delete_user_group_loc = (By.XPATH,'(//a[@angularticslabel="刪除用戶群組"])[1]')
     delete_confirm_loc = (By.XPATH,'//span[text()=" 确定 "]')
     assert_delete_user_loc = (By.XPATH,'//span[contains(text(),"用户群组已删除")]')
 
@@ -166,11 +166,10 @@ class UserManagePage(BasePage):
         finally:
             self.click(UserManagePage.invite_user_loc)
             self.click(UserManagePage.invite_users_manage_loc)
-            sleep(2)
-            self.click(UserManagePage.upload_file_loc)
-            sleep(2)
-            self.upload_file(filename)
-            # time.sleep(1)
+            # self.click(UserManagePage.upload_file_loc)
+            # sleep(2)
+            self.upload_file(filename,UserManagePage.upload_file_loc)
+            sleep(1)
             self.click(UserManagePage.button_send_file_loc)
 
     def add_user_group(self):
@@ -219,7 +218,7 @@ class UserManagePage(BasePage):
             self.driver.get(UserManagePage.user_group_url)
         finally:
             self.click(UserManagePage.delete_user_group_loc)
-            sleep(2)
+            sleep(1)
             self.click(UserManagePage.delete_confirm_loc)
 
     def assert_del_user(self):

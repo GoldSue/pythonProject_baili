@@ -55,11 +55,11 @@ class BasePage:
         element = self.loctor(loc,timeout)
         element.send_keys(value)
 
-    def clear_input(self,loc,value,timeout=5):
+    def clear_input(self,loc,value):
         sleep(1)
-        self.clear(loc)
+        element = self.waite_ele(loc)
+        element.clear()
         sleep(1)
-        element = self.loctor(loc, timeout)
         element.send_keys(value)
 
     def click(self,loc,timeout=10):
@@ -82,10 +82,10 @@ class BasePage:
         :param loc: 元素定位，文本框
         :return:
         # """
-        # self.loctor(loc).clear()
-        ele = self.loctor(loc)
-        ele.send_keys(Keys.CONTROL + "a")
-        ele.send_keys(Keys.DELETE)
+        self.loctor(loc).clear()
+        # ele = self.loctor(loc)
+        # ele.send_keys(Keys.CONTROL + "a")
+        # ele.send_keys(Keys.DELETE)
 
     def get_url(self):
         """
@@ -145,19 +145,13 @@ class BasePage:
         filePath = os.path.join(dir, filename)
         return filePath
 
-    def upload_file(self,filename):
+    def upload_file(self,filename,loc,):
 
         try:
-            # self.logger.info("开始上传文件: %s", filename)
             file_path = self.get_file_path(filename)
-            # self.logger.info("文件路径: %s", file_path)
-            # self.logger.info("输入文件路径到系统文件选择窗口")
-            pyautogui.typewrite(file_path, interval=0.05)
-            # self.logger.info("文件路径已输入")
-            sleep(1)
-            # self.logger.info("按下回车键确认上传")
-            pyautogui.press('enter',2)
-            # self.logger.info("文件上传完成")
+            loctor = self.waite_ele(loc,15)
+            self.driver.execute_script("arguments[0].style.display = 'block'; arguments[0].style.opacity = 1; arguments[0].style.position = 'relative';", loctor)
+            self.send_keys(loc,file_path,10)
         except Exception as e:
             self.logger.exception("文件上传过程中发生错误: %s", str(e))
         # 确保文件上传完成，必要时可以增加一些等待时间
@@ -224,7 +218,43 @@ class BasePage:
         element = self.loctor(loc)
         self.driver.execute_script("arguments[0].click();", element)
 
+    def remove_attributes(self, loc, attributes_to_remove):
+        try:
+            # 等待元素可见
+            element = WebDriverWait(self.driver, 10).until(
+                EC.visibility_of_element_located(loc)
+            )
 
+            # 移除指定的属性
+            if attributes_to_remove:
+                for attr in attributes_to_remove:
+                    self.driver.execute_script(f"arguments[0].removeAttribute('{attr}');", element)
+
+            return element
+
+        except Exception as e:
+            print(f"移除属性发生错误: {e}")
+
+    def update_styles(self, loc, styles_to_update):
+        try:
+            # 等待元素可见
+            element = WebDriverWait(self.driver, 10).until(
+                EC.visibility_of_element_located(loc)
+            )
+
+            # 更新指定的样式
+            if styles_to_update:
+                for style, value in styles_to_update.items():
+                    self.driver.execute_script(f"arguments[0].style.{style} = '{value}';", element)
+
+            return element
+
+        except Exception as e:
+            print(f"修改属性发生错误: {e}")
+
+    def remove_update_attributes(self,loc,attributes_to_remove,styles_to_update):
+        self.remove_attributes(loc,attributes_to_remove)
+        self.update_styles(loc,styles_to_update)
 
 
 

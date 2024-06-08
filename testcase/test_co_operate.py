@@ -76,8 +76,8 @@ class TestCoOperate(BaseUtil):
     # def test_009_add_dep(self):
     #     co = CoOperation(self.driver)
     #     co.add_dep()
-    #     result = co.assert_add_dep()
-    #     self.assertIn("新增成功", result, msg=f"断言失败：期望包含 '新增成功'，实际返回 '{result}'")
+        # result = co.assert_add_dep()
+        # self.assertIn("新增成功", result, msg=f"断言失败：期望包含 '新增成功'，实际返回 '{result}'")
 
     @log_exceptions
     def test_010_add_site(self):

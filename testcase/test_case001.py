@@ -9,9 +9,5 @@ log = os.path.join(current_dir,'logging.conf')
 logging.config.fileConfig(log)
 # 创建一个日志器logger
 logger = logging.getLogger('fileAndConsole')
-logger.debug('中文')
-logger.info('英文')
-logger.warning('汉语')
-logger.error('日志')
-logger.critical('开始')
-# # 创建一个日志器logger
+logger.debug('启动中...')
+

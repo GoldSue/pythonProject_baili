@@ -57,8 +57,7 @@ class CoOperation(BasePage):
     #导入员工
     export_employee_loc = (By.XPATH,'//span[text()="导入"]')
     download_templat_loc = (By.XPATH,'//span[text()="下载模版 "]')
-    upload_employee_loc = (By.XPATH,'//span[contains(text(),"上传档案")]')
-    upload_script_loc = (By.CSS_SELECTOR,'[placeholder="请选择上传档案"]')
+    upload_script_loc = (By.CSS_SELECTOR,'[type="file"]')
     export_button_loc = (By.XPATH,'//span[contains(text(),"导入员工")]')
     assert_import_ok_loc = (By.XPATH,'//span[contains(text(),"导入成功")]')
     #导出员工
@@ -101,7 +100,6 @@ class CoOperation(BasePage):
     assert_delete_site_loc = (By.XPATH,'//span[text()="删除成功"]')
 
     #页面操作
-
     def add_co(self,name = "123"):
         self.click(CoOperation.co_operat_loc)
         sleep(2)
@@ -164,7 +162,6 @@ class CoOperation(BasePage):
         self.click(CoOperation.employee_save_loc)
         sleep(1)
         self.click(CoOperation.modify_employ_cinfirm)
-        print("1234567890987654321")
 
     def test_lacor(self):
         return self.loctor(CoOperation.assert_modify_employee_loc)
@@ -187,16 +184,13 @@ class CoOperation(BasePage):
         return self.get_value(CoOperation.assert_delete_employee_loc)
 
     def export_employee(self,filename="emp_export.xlsx"):
-        sleep(2)
+        sleep(1)
         self.scroll_into_view(CoOperation.export_employee_loc)
-        sleep(2)
+        sleep(1)
         self.click(CoOperation.export_employee_loc)
         self.click(CoOperation.download_templat_loc)
-        sleep(2)
-        self.click(CoOperation.upload_employee_loc)
-        sleep(2)
-        self.upload_file(filename)
-        sleep(2)
+        self.upload_file(filename,CoOperation.upload_script_loc)
+        sleep(1)
         self.click(CoOperation.export_button_loc)
 
     def assert_export(self):
@@ -215,10 +209,10 @@ class CoOperation(BasePage):
         sleep(1)
         self.click(CoOperation.add_dep_loc)
         # sleep(5)
-        self.remove_element_attribute(CoOperation.co_an_name_loc)
+        self.remove_update_attributes(CoOperation.co_an_name_loc,['readonly'],{'opacity','1'})
         # sleep(5)
         sleep(2)
-        self.send_keys(CoOperation.co_an_name_loc,"4321(4321)")
+        self.click(CoOperation.co_an_name_loc)
         # self.click(CoOperation.co_name_first_loc)
         self.send_keys(CoOperation.dept_id_loc,self.random())
         self.send_keys(CoOperation.dept_name_loc,self.random())
